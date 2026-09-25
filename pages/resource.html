@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resources | Internship & Career Guide</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</head>
+
+
+<body class="bg-white text-[#0F172A] font-inter">
+    <!------Navbar-------- -->
+    <header class="w-full bg-white border-b border-slate-100">
+        <nav class="max-w-[1440px] mx-auto min-h-[72px] lg:h-[100px] px-4 sm:px-6 lg:px-12
+                    flex items-center justify-between py-2">
+            <a href="../index.html" class="flex items-center gap-2 group min-w-0">
+                <img src="/public/img/logo2.png" alt="logo"
+                    class="h-10 w-10 sm:h-12 sm:w-12 lg:h-16 lg:w-16 object-contain shrink-0">
+                <span class="font-poppins font-bold lg:text-lg md:text-xl
+                             text-blue-600 whitespace-nowrap sm:text-base truncate">
+                    Internship & Career Guide
+                </span>
+            </a>
+            <div class="hidden lg:flex items-center gap-10">
+
+                <a href="../index.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Home
+                </a>
+
+                <a href="explore.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Explore
+                </a>
+
+                <a href="career.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Career Job
+                </a>
+                <!-- Active Page-->
+                <a href="resource.html" class="relative py-3 text-[16px] font-semibold text-blue-600">
+                    Resource
+                    <span class="absolute left-0 right-0 -bottom-[17px] h-[3px] rounded-full bg-blue-600"></span>
+                </a>
+                <a href="internship.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">Internship
+                </a>
+            </div>
+            <!--Responsive -->
+            <button id="menuBtn" class="lg:hidden p-2 rounded-lg
+                       text-slate-800 hover:bg-slate-100 shrink-0">
+                <span class="lg:hidden text-xl  px-2 py-2 rounded-md">
+                    <i class="fa-solid fa-bars"></i></span>
+            </button>
+
+        </nav>
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-100 bg-white">
+            <div class="px-6 py-5 flex flex-col gap-4">
+                <a href="../index.html" class="py-2 font-semibold text-slate-700">
+                    Home
+                </a>
+                <a href="explore.html" class="py-2 font-semibold text-slate-700">
+                    Explore
+                </a>
+                <a href="career.html" class="py-2 font-semibold text-slate-700">
+                    Career Job
+                </a>
+                <a href="resource.html" class="py-2 font-semibold text-blue-600">
+                    Resource
+                </a>
+                <a href="internship.html" class="py-2 font-semibold text-slate-700">
+                    Internship
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!---SECTION HERO BANNER----->
+        <section class="relative min-h-[680px] md:min-h-[720px]
+                   flex items-center overflow-hidden">
+            <img src="/public/img/banner-resource.png" alt="Students working together" class="absolute inset-0 w-full h-full
+                       object-cover object-center">
+            <div class="absolute inset-0
+                       bg-gradient-to-r
+                       from-[#0F3D3E]/95
+                       via-[#0F3D3E]/75
+                       to-[#0F3D3E]/20">
+            </div>
+            <div class="relative z-10
+                       max-w-[1440px] w-full mx-auto
+                       px-6 sm:px-10 lg:px-12
+                       py-16">
+                <div class="max-w-[760px]">
+                    <div class="inline-flex items-center
+                               px-6 py-3
+                               mb-7
+                               rounded-full
+                               bg-teal-400
+                               text-white
+                               text-sm md:text-base
+                               font-semibold">
+                        CAREER RESOURCES
+
+                    </div>
+                    <h1 class="font-poppins
+                               text-4xl sm:text-5xl md:text-6xl
+                               lg:text-[58px]
+                               leading-[1.1]
+                               font-bold
+                               tracking-tight
+                               text-white">
+                        Learn, prepare, and build
+                        <br class="hidden sm:block">
+                        your future career.
+                    </h1>
+                    <p class="mt-7
+                               max-w-[650px]
+                               text-base md:text-lg
+                               leading-8
+                               text-white/90">
+                        Explore internship stories, career advice,
+                        and practical resources to help you prepare
+                        for your future career.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="mt-8 flex flex-col sm:flex-row items-start gap-4">
+                        <a href="#resources" class="inline-flex items-center justify-center
+                            gap-3
+                            px-8 py-4
+                            rounded-full
+                           bg-blue-600
+                           hover:bg-blue-700
+                           text-white
+                           font-semibold
+                            transition duration-200
+                            shadow-lg shadow-blue-900/20">
+                            Explore Resources
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="" class="inline-flex items-center justify-center
+                        px-6 py-3
+                        min-h-[56px]
+                        rounded-full
+                        border-2 border-white/80
+                        hover:bg-white
+                        hover:text-[#0F3D3E]
+                        text-white
+                        font-semibold
+                        whitespace-nowrap
+                        transition duration-200">
+                            Prepare Your CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== SECTION Experience=======-->
+        <section class="py-20 px-6 lg:px-12 bg-slate-50">
+            <div class="max-w-[1600px] mx-auto">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="mt-3 font-poppins text-3xl md:text-4xl
+                       font-bold text-[#0F172A]">
+                        Student Internship Experiences
+                    </h2>
+                    <p class="mt-4 text-slate-600 leading-7">
+                        Find useful information, practical advice,
+                        and real student experiences to help you
+                        prepare for your career.
+                    </p>
+                </div>
+                <!-- CARD-->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3
+                    gap-8 mt-12">
+                    <!-- CARD 1 -->
+                    <article class="group flex flex-col overflow-hidden
+                            bg-white rounded-2xl
+                            border border-slate-200
+                            shadow-sm
+                            hover:shadow-xl
+                            hover:-translate-y-1
+                            transition-all duration-300">
+                        <div class="relative h-56 overflow-hidden bg-slate-100">
+                            <img src="https://media.licdn.com/dms/image/v2/C5622AQH9w47D7HK8iw/feedshare-shrink_800/feedshare-shrink_800/0/1674792671325?e=2147483647&v=beta&t=ft4MoaYNACOs2MmqDdUyN-MNegnVGJMkoRvZ--RXfQE"
+                                alt="Chnphorn LEY internship experience" class="w-full h-full object-cover
+                               group-hover:scale-105
+                               transition-transform duration-500">
+                        </div>
+                        <div class="flex flex-col flex-1 p-7">
+                            <h3 class="font-poppins text-xl font-bold text-[#0F172A]">
+                                Chomphorn LEY
+                            </h3>
+                            <p class="mt-1 text-blue-600 font-semibold text-sm">
+                                Linux System Engineer Intern
+                            </p>
+                            <div class="mt-6 space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="building-2" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Company
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            Dynamo Tech Solutions Co., Ltd.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="map-pin" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Location
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            Phnom Penh, Cambodia
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="calendar-days" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Duration
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            4 Months
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-slate-100 my-6"></div>
+                            <p class="text-sm leading-6 text-slate-600 line-clamp-3">
+                                Learned Linux, Vagrant, Ansible, and GitLab while
+                                developing teamwork, communication, research,
+                                and problem-solving skills.
+                            </p>
+
+                            <div class="mt-auto pt-6">
+                                <a href="https://dynamo-tech.com/news/%E3%80%8Emy-four-month-internship-at-dynamo-tech-solutions-co-ltd-%E3%80%8F/?utm_source=chatgpt.com"
+                                    class="inline-flex items-center gap-2
+                                  text-sm font-semibold
+                                  text-blue-600
+                                  hover:text-blue-700 transition">
+                                    Read Experience
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- CARD 2 -->
+                    <article class="group flex flex-col overflow-hidden
+                            bg-white rounded-2xl
+                            border border-slate-200
+                            shadow-sm
+                            hover:shadow-xl
+                            hover:-translate-y-1
+                            transition-all duration-300">
+                        <div class="relative h-56 overflow-hidden bg-slate-100">
+                            <img src="https://opendevelopmentcambodia.net/wp-content/uploads/2022/05/Sinet_MC.png"
+                                alt="Student internship experience" class="w-full h-full object-cover
+                                group-hover:scale-105
+                                transition-transform duration-500">
+                        </div>
+                        <div class="flex flex-col flex-1 p-7">
+                            <h3 class="font-poppins text-xl font-bold text-[#0F172A]">
+                                Din Liseinet
+                            </h3>
+                            <p class="mt-1 text-blue-600 font-semibold text-sm">
+                                Research Assistant Intern
+                            </p>
+                            <div class="mt-6 space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="building-2" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Organization
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            Open Development Cambodia
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="map-pin" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Location
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            Phnom Penh, Cambodia
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="calendar-days" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Published
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            May 2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-slate-100 my-6"></div>
+                            <p class="text-sm leading-6 text-slate-600 line-clamp-3">
+                                Gained practical research experience and developed
+                                professional skills through real-world work and
+                                collaboration.
+                            </p>
+                            <div class="mt-auto pt-6">
+                                <a href="https://opendevelopmentcambodia.net/reflecting-on-my-internship-experience-with-odc/?utm_source=chatgpt.com"
+                                    class="inline-flex items-center gap-2
+                                  text-sm font-semibold
+                                  text-blue-600 hover:text-blue-700 transition">
+                                    Read Experience
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- CARD 3 -->
+                    <article class="group flex flex-col overflow-hidden
+                            bg-white rounded-2xl
+                            border border-slate-200
+                            shadow-sm
+                            hover:shadow-xl
+                            hover:-translate-y-1
+                            transition-all duration-300">
+                        <div class="relative h-56 overflow-hidden bg-slate-100">
+                            <img src="https://www.swisscontact.org/_ari/8d30d8ee-c210-4215-996c-92d31198783b/88318cbf13557f5184b9635250ba692d045c505f/1200/0/og/photo_2023-02-23_07-42-57.jpg.webp"
+                                alt="Student internship experience" class="w-full h-full object-cover
+                                group-hover:scale-105
+                                transition-transform duration-500">
+                        </div>
+                        <div class="flex flex-col flex-1 p-7">
+                            <h3 class="font-poppins text-xl font-bold text-[#0F172A]">
+                                Pha Sreynich
+                            </h3>
+                            <p class="mt-1 text-blue-600 font-semibold text-sm">
+                                Internship Experience
+                            </p>
+                            <div class="mt-6 space-y-4">
+
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="building-2" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Organization
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            CARDEC / RUA
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="map-pin" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Location
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            Phnom Penh, Cambodia
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="graduation-cap" class="w-5 h-5 flex-shrink-0 text-blue-600"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500">
+                                            Background
+                                        </p>
+                                        <p class="text-sm font-medium text-slate-700">
+                                            Faculty of Agriculture Engineering
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-slate-100 my-6"></div>
+                            <p class="text-sm leading-6 text-slate-600 line-clamp-3">
+                                A student journey from Banteay Meanchey to Phnom Penh,
+                                gaining new experience and building confidence through
+                                practical learning.
+                            </p>
+                            <div class="mt-auto pt-6">
+                                <a href="https://www.swisscontact.org/en/news/student-intern-shares-experience-from-inguider-model?utm_source=chatgpt.com"
+                                    class="inline-flex items-center gap-2
+                                  text-sm font-semibold
+                                  text-blue-600
+                                  hover:text-blue-700 transition">
+                                    Read Experience
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--------SECTION CV WRITING----->
+        <section class="py-8 px-6 lg:px-12 bg-slate-50">
+            <div class="max-w-[1400px] mx-auto ">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class=" mt-3 font-poppins text-3xl md:text-4xl font-bold
+                     text-[#0F172A]">
+                        CV Writing Guide</h2>
+                    <p class="mt-4 text-slate-600 leading-7 ">
+                        Your CV is often the first impression
+                        an employer has of you.Make it count </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 mt-12">
+                    <!----article1------>
+                    <div class="flex flex-col overflow-hidden
+                            bg-white rounded-2xl
+                            py-4 px-4
+                            border border-slate-200
+                            shadow-sm
+                            hover:shadow-xl
+                            hover:-translate-y-1
+                            transition-all duration-300">
+                        <h3 class="text-xl text-blue-900 font-bold mb-4 text-center">CV Structure Template </h3>
+                        <div class="border-t border-teal-100 p-6 md:p-8 shadow-sm">
+                            <p class="text-slate-600 text-base md:text-base leading-7 mb-7">
+                                Follow this structure when writing your CV.
+                                Keep it to one page if you are a student.</p>
+                            <!----CONTENT1--->
+                            <div class="flex items-center gap-3 mb-5">
+                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">1.Contact
+                                    Information</h3>
+                            </div>
+                            <div class="space-y-2 ml-1 md:ml-8">
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">Full name</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8 "></i>
+                                    <span class="text-base text-gray-600">Email address(professional)</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">Phone number</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">linkIn profile URL</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">City/Region(Full address or required)</span>
+                                </div>
+                            </div>
+                            <!----CONTENT2--->
+                            <div class="flex items-center gap-3 mb-5">
+                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">2.Professional
+                                    Summary</h3>
+                            </div>
+                            <div class="space-y-2 ml-1 md:ml-8">
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">2-3 sentences describing who you are</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8 "></i>
+                                    <span class="text-base text-gray-600">Your key strengths and career interest</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">What are you looking for in an
+                                        internship</span>
+                                </div>
+                            </div>
+                            <!---CONTENT3---->
+                            <div class="flex items-center gap-3 mb-5">
+                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">3.Education</h3>
+                            </div>
+                            <div class="space-y-2 ml-1 md:ml-8">
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">Degree,university name,expected graduation
+                                        year</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8 "></i>
+                                    <span class="text-base text-gray-600">Relevant course work(3-5 coursee)</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">GPA (only if 3.0 or above)</span>
+                                </div>
+                            </div>
+                            <!---CONTENT4----->
+                            <div class="flex items-center gap-3 mb-5">
+                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">4.Skills</h3>
+                            </div>
+                            <div class="space-y-2 ml-1 md:ml-8">
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">Technical skills (programming
+                                        languages,tools,software)</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8 "></i>
+                                    <span class="text-base text-gray-600">Soft skills
+                                        (communication,teamwork,problem-solving)</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">Languages (if applicable)</span>
+                                </div>
+                            </div>
+                            <!----CONTENT5---->
+                            <div class="flex items-center gap-3 mb-5">
+                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">5.Experience &
+                                    Projects</h3>
+                            </div>
+                            <div class="space-y-2 ml-1 md:ml-8">
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">Job title,company,date</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8 "></i>
+                                    <span class="text-base text-gray-600">2-3 bullet points starting with actions
+                                        verbs</span>
+                                </div>
+                                <div class="text-blue-700 gap-1">
+                                    <i class="fa-solid fa-check w-8 h-8"></i>
+                                    <span class="text-base text-gray-600">Include university project if you lack work
+                                        experience</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----article2---->
+                    <div class="flex flex-col overflow-hidden py-2 px-4">
+                        <h3 class="text-xl text-blue-900 font-bold mb-6 text-center">
+                            CV Do's And Don't
+                        </h3>
+                        <div class="p-2 md:p-4">
+                            <h3 class="text-lg text-blue-700 text-center mb-5 font-semibold">
+                                Should do
+                            </h3>
+                            <div class="flex flex-col items-center gap-4">
+                                <!--card1 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                      rounded-xl py-5 px-6
+                                      border border-slate-200
+                                      shadow-sm
+                                      hover:shadow-xl
+                                      hover:-translate-y-1
+                                      transition-all duration-300">
+                                    <i class="fa-solid fa-check w-6 h-6 shrink-0 text-green-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Use a clean, professional layout with consistent fonts.
+                                    </span>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                     rounded-xl py-5 px-6
+                                     border border-slate-200
+                                     shadow-sm
+                                     hover:shadow-xl
+                                     hover:-translate-y-1
+                                     transition-all duration-300">
+                                    <i class="fa-solid fa-check w-6 h-6 shrink-0 text-green-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Tailor your CV to each job by highlighting relevant skills.
+                                    </span>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                    rounded-xl py-5 px-6
+                                    border border-slate-200
+                                    shadow-sm
+                                    hover:shadow-xl
+                                    hover:-translate-y-1
+                                    transition-all duration-300">
+                                    <i class="fa-solid fa-check w-6 h-6 shrink-0 text-green-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Use action verbs: "developed," "analyzed," "designed,"
+                                        "managed."
+                                    </span>
+                                </div>
+                                <!-- Card 4 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                   rounded-xl py-5 px-6
+                                   border border-slate-200
+                                   shadow-sm
+                                   hover:shadow-xl
+                                   hover:-translate-y-1
+                                   transition-all duration-300">
+                                    <i class="fa-solid fa-check w-6 h-6 shrink-0 text-green-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Quantify achievements: "Improved efficiency by 20%."
+                                    </span>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                     rounded-xl py-5 px-6
+                                     border border-slate-200
+                                     shadow-sm
+                                     hover:shadow-xl
+                                     hover:-translate-y-1
+                                     transition-all duration-300">
+                                    <i class="fa-solid fa-check w-6 h-6 shrink-0 text-green-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Proofread multiple times and ask a friend to review it.
+                                    </span>
+                                </div>
+                                <!-- Card 6 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                     rounded-xl py-5 px-6
+                                     border border-slate-200
+                                     shadow-sm
+                                     hover:shadow-xl
+                                     hover:-translate-y-1
+                                     transition-all duration-300">
+                                    <i class="fa-solid fa-check w-6 h-6 shrink-0 text-green-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Save and submit as a PDF to preserve formatting.
+                                    </span>
+                                </div>
+                            </div>
+                            <!--don't-->
+                            <h3 class="text-lg text-red-600 text-center mt-10 mb-5 font-semibold">
+                                Don't
+                            </h3>
+                            <div class="flex flex-col items-center gap-4">
+                                <!-- Card 1 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                      rounded-xl py-5 px-6
+                                      border border-slate-200
+                                      shadow-sm
+                                      hover:shadow-xl
+                                      hover:-translate-y-1
+                                      transition-all duration-300">
+                                    <i class="fa-solid fa-xmark w-6 h-6 shrink-0 text-red-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Do not use flashy colors, photos, or decorative fonts.
+                                    </span>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                       rounded-xl py-5 px-6
+                                       border border-slate-200
+                                       shadow-sm
+                                       hover:shadow-xl
+                                       hover:-translate-y-1
+                                       transition-all duration-300">
+                                    <i class="fa-solid fa-xmark w-8 h-8 shrink-0 text-red-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Do not include irrelevant personal details like age or
+                                        marital status.
+                                    </span>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                       rounded-xl py-5 px-6
+                                       border border-slate-200
+                                       shadow-sm
+                                       hover:shadow-xl
+                                       hover:-translate-y-1
+                                       transition-all duration-300">
+                                    <i class="fa-solid fa-xmark w-6 h-6 shrink-0 text-red-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Do not exceed one page as a student.
+                                    </span>
+                                </div>
+                                <!-- Card 4 -->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                      rounded-xl py-5 px-6
+                                      border border-slate-200
+                                      shadow-sm
+                                      hover:shadow-xl
+                                      hover:-translate-y-1
+                                      transition-all duration-300">
+                                    <i class="fa-solid fa-xmark w-6 h-6 shrink-0 text-red-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Do not send the same CV to every employer without
+                                        customizing it.
+                                    </span>
+                                </div>
+                                <!----Card 5--->
+                                <div class="w-full max-w-3xl bg-white flex items-start gap-4
+                                      rounded-xl py-5 px-6
+                                      border border-slate-200
+                                      shadow-sm
+                                      hover:shadow-xl
+                                      hover:-translate-y-1
+                                      transition-all duration-300">
+                                    <i class="fa-solid fa-xmark w-6 h-6 shrink-0 text-red-500 mt-0.5"></i>
+                                    <span class="min-w-0 text-gray-600 text-base leading-6">
+                                        Do not send the same CV to every employer without
+                                        customizing it.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------INTERVIEW PREPARATION-------->
+        <section class="bg-white py-8 px-6 lg:px-12">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="mt-3 font-poppins text-center text-3xl md:text-4xl font-bold text-[#0F172A]">
+                        Interview Preparation
+                    </h2>
+                    <p class="mt-4 text-slate-600 leading-7">
+                        Click each question to see a suggested approach to answering it.
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
+
+                        <!--Left Column-->
+                        <div>
+                            <h3 class="text-xl text-blue-700 font-semibold md:text-2xl mb-2">
+                                Common Interview Questions
+                            </h3>
+                            <p class="text-base text-gray-500 mb-6 text-center">
+                                Practice these questions aloud. Click to reveal tips on how to answer.
+                            </p>
+                            <div class="flex flex-col gap-4">
+
+                                <button type="button"
+                                    class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
+                                            shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <span class="font-semibold text-blue-950 text-left">"Tell me about yourself?"</span>
+                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                </button>
+                                <button type="button"
+                                    class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
+                                            shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <span class="font-semibold text-blue-950 text-left">"Why are you interested in this
+                                        role?"</span>
+                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
+                                        shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <span class="font-semibold text-blue-950 text-left">"What are your strengths and
+                                        weaknesses?"</span>
+                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
+                                        shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <span class="font-semibold text-blue-950 text-left">"Describe a challenge you faced
+                                        and how you handled it."</span>
+                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
+                                        shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <span class="font-semibold text-blue-950 text-left">"Do you have any questions fo
+                                        us?"</span>
+                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- RIGHT COLUMN -->
+                        <div>
+                            <img src="https://images.pexels.com/photos/5439455/pexels-photo-5439455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                alt="interview" class="w-full h-auto rounded-xl object-cover" />
+                            <h3 class="mt-6 text-xl md:text-2xl font-semibold text-blue-800">
+                                Quick Interview Tips
+                            </h3>
+                            <div class="mt-5 p-5 flex flex-col gap-4">
+                                <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
+                                    <span class="text-xl px-4">
+                                        <i class="fa-solid fa-user-tie h-8 w-8 text-blue-800"></i></span>
+                                    <p class="text-slate-700 leading-6">
+                                        Dress one level more formal than the company's daily dress code.
+                                    </p>
+                                </div>
+
+                                <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
+                                    <span class="text-xl px-4">
+                                        <i class="fa-solid fa-clock h-8 w-8 text-blue-800"></i></span>
+                                    <p class="text-slate-700 leading-6">
+                                        Arrive 10-15 minutes early to settle in and stay calm.
+                                    </p>
+                                </div>
+
+                                <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
+                                    <span class="text-xl px-4">
+                                        <i class=" fa-solid fa-copy h-8 w-8 text-blue-800"></i></span>
+                                    <p class="text-slate-700 leading-6">
+                                        Bring extra copies of your resume and a notepad.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
+                                    <span class="text-xl px-4">
+                                        <i class="fa-solid fa-eye h-8 w-8 text-blue-800"></i></span>
+                                    <p class="text-slate-700 leading-6">
+                                        Maintain eye contact and listen actively to every question.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
+                                    <span class="text-xl px-4">
+                                        <i class="fa-solid fa-file h-8 w-8 text-blue-800"></i></span>
+                                    <p class="text-slate-700 leading-6">
+                                        Bring a notepad and pen to jot down key points during the interview.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
+                                    <span class="text-xl px-4">
+                                        <i class="fa fa-envelope" aria-hidden="true h-8 w-8 text-blue-800"></i></span>
+                                    <p class="text-slate-700 leading-6">
+                                        Send a thank-you email within 24 hours of the interview.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
+                                    <span class="text-xl px-4">
+                                        <i class="fa fa-reply" aria-hidden="true h-8 w-8 text-blue-800"></i></span>
+                                    <p class="text-slate-700 leading-6">
+                                        It is okay to pause and think before answering a difficult question.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------Check Application-------->
+        <section class="bg-sky-100 py-8 px-6 lg:px-12">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="mt-3 font-poppins text-center text-3xl md:text-4xl font-bold text-[#0F172A]">
+                        Application Checklist
+                    </h2>
+                    <p class="mt-4 text-slate-600 leading-7 text-center">
+                        Tick each item as you complete it. Your progress is saved automatically.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Research the company and role thoroughly</span>
+                        </label>
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm  transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Update CV and tailor it to the specific role</span>
+                        </label>
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Write a customized cover letter</span>
+                        </label>
+
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Check all links and contact details are correct</span>
+                        </label>
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm  transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Save CV and cover letter as PDF files</span>
+                        </label>
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Practice answering common interview questions</span>
+                        </label>
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm  transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Prepare 2-3 questions to ask the interviewer</span>
+                        </label>
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Choose appropriate interview clothing in advance</span>
+                        </label>
+                        <label class="w-full border border-slate-200 bg-white py-4 px-4 flex items-start gap-3 rounded-xl
+                             shadow-sm transition-all duration-300 cursor-pointer">
+                            <input type="checkbox"
+                                class="mt-1 w-5 h-5 rounded border-slate-300 text-blue-700 flex-shrink-0" />
+                            <span class="text-slate-800">Submit application before the deadline</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------Apply Section--------->
+        <section class="bg-white py-8 px-6 lg:px-12">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700
+                       px-6 py-14 sm:px-10 sm:py-16 text-center">
+                    <div class="absolute inset-0 
+                        bg-gradient-to-r
+                        from-[#0F3D3E]/40
+                        via-[#0F3D3E]/10
+                         to-transparent
+                         pointer-events-none">
+                    </div>
+                    <div class="relative z-10 max-w-2xl mx-auto">
+                        <h1 class="font-poppins text-4xl sm:text-5xl font-bold text-white leading-tight">
+                            Ready to Apply?
+                        </h1>
+                        <p class="mt-4 text-base sm:text-lg text-white/90">
+                            Browse internship opportunities and put your preparation into action.
+                        </p>
+                        <div class="mt-8 flex justify-center">
+                            <a href="#internship" class="inline-flex items-center justify-center gap-2
+                                 px-8 py-4 rounded-full
+                               bg-white hover:bg-slate-100
+                               text-teal-700 font-semibold
+                               transition duration-200 shadow-lg">
+                                Find Internships
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Footer -->
+    <footer class="bg-[#0F172A] py-10 px-6 lg:px-12 border-t border-white/10">
+        <div class="flex flex-col lg:flex-row justify-between gap-10 md:grid grid-cols-4">
+            <!-- Brand -->
+            <div class="flex gap-4 max-w-xs md:items-start *:overflow-hidden">
+                <img src="/public/img/logo2.png" alt="Internship & Career Guide logo" class="h-24 w-18 shrink-0">
+                <span class="text-white text-base leading-6">
+                    <span class="font-bold block mb-1 md:overflow-hidden">Internship & Career Guide</span>
+                    <span class="text-white/70 text-sm md:overflow-hidden">
+                        Helping university students navigate the journey from classroom to career.
+                    </span>
+                </span>
+            </div>
+            <!-- Page -->
+            <!-- <div class="md:grid grid-cols-3"> -->
+            <div class="flex flex-col gap-3">
+                <h3 class="text-white text-base font-semibold mb-1">Page</h3>
+                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Home</a>
+                <a href="explore.html" class="text-white/70 hover:text-white text-sm transition-colors">Explore</a>
+                <a href="career-job.html" class="text-white/70 hover:text-white text-sm transition-colors">Career
+                    Jobs</a>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Resources</a>
+                <a href="internship.html"
+                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
+            </div>
+            <!-- Resources -->
+            <div class="flex flex-col gap-3">
+                <h3 class="text-white text-base font-semibold mb-1">Resources</h3>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">CV
+                    Template</a>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Interview
+                    Q&A</a>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Application
+                    Checklist</a>
+                <a href="internship.html"
+                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
+            </div>
+            <!-- About -->
+            <div class="flex flex-col gap-3">
+                <h3 class="text-white text-base font-semibold mb-1">About</h3>
+                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">This
+                    Site</a>
+                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Your
+                    Journey</a>
+                <a href="internship.html"
+                    class="text-white/70 hover:text-white text-sm transition-colors">Newsletter</a>
+            </div>
+        </div>
+        </div>
+        <div class="mt-10 pt-6 border-t border-white/10 text-center text-white/50 text-xs">
+            &copy; 2026 Internship & Career Guide. All rights reserved.
+        </div>
+    </footer>
+    <!-- ========================= JAVASCRIPT========================== -->
+
+    <script>
+
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+    </script>
+</body>
+
+</html>
