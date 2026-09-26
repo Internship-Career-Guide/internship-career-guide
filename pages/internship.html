@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Internship & Career Guide</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</head>
+
+<body class="bg-white text-[#0F172A] font-inter">
+    <!------Navbar-------- -->
+    <header class="w-full bg-white border-b border-slate-100">
+        <nav class="max-w-[1440px] mx-auto min-h-[72px] lg:h-[100px] px-4 sm:px-6 lg:px-12
+                    flex items-center justify-between py-2">
+            <a href="../index.html" class="flex items-center gap-2 group min-w-0">
+                <img src="/public/img/logo2.png" alt="logo"
+                    class="h-10 w-10 sm:h-12 sm:w-12 lg:h-16 lg:w-16 object-contain shrink-0">
+                <span class="font-poppins font-bold lg:text-lg md:text-xl
+                             text-blue-600 whitespace-nowrap sm:text-base truncate">
+                    Internship & Career Guide
+                </span>
+            </a>
+            <div class="hidden lg:flex items-center gap-10">
+
+                <a href="../index.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Home
+                </a>
+
+                <a href="explore.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Explore
+                </a>
+
+                <a href="career.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Career Job
+                </a>
+                <a href="resource.html" class="relative py-3 text-[16px] font-semibold 
+                          text-slate-800 hover:text-blue-600 transition">
+                    Resource
+                </a>
+                <!-- Active Page-->
+                <a href="internship.html" class="relative py-3 text-[16px] font-semibold text-blue-600">Internship
+                    <span class="absolute left-0 right-0 -bottom-[17px] h-[3px] rounded-full bg-blue-600"></span>
+                </a>
+            </div>
+            <!--Responsive -->
+            <button id="menuBtn" class="lg:hidden p-2 rounded-lg
+                       text-slate-800 hover:bg-slate-100 shrink-0">
+                <span class="lg:hidden text-xl  px-2 py-2 rounded-md">
+                    <i class="fa-solid fa-bars"></i></span>
+            </button>
+
+        </nav>
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-100 bg-white">
+            <div class="px-6 py-5 flex flex-col gap-4">
+                <a href="../index.html" class="py-2 font-semibold text-slate-700">
+                    Home
+                </a>
+                <a href="explore.html" class="py-2 font-semibold text-slate-700">
+                    Explore
+                </a>
+                <a href="career-job.html" class="py-2 font-semibold text-slate-700">
+                    Career Job
+                </a>
+                <a href="resource.html" class="py-2 font-semibold text-blue-600">
+                    Resource
+                </a>
+                <a href="internship.html" class="py-2 font-semibold text-slate-700">
+                    Internship
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="relative min-h-[680px] md:min-h-[720px] flex items-center overflow-hidden">
+            <img src="/public/img/hero.jpg" alt="Students working together"
+                class="absolute inset-0 w-full h-full object-cover object-center">
+            <div class="absolute inset-0
+                 bg-gradient-to-r
+                 from-[#0F3D3E]/95
+                 via-[#0F3D3E]/75
+                 to-[#0F3D3E]/20">
+            </div>
+            <div class="relative z-10 max-w-[1440px] w-full mx-auto px-6 sm:px-10 lg:px-12 py-16">
+                <div class="max-w-[760px]">
+                    <div class="inline-flex items-center
+                        px-4 py-1.5
+                        mb-6
+                        rounded-full
+                        border border-white/30
+                        bg-white/10
+                        backdrop-blur-sm
+                        text-white
+                        text-xs md:text-sm
+                        font-medium
+                        tracking-wide">
+                        INTERNSHIPS
+                    </div>
+                    <h1 class="font-poppins
+                        text-4xl sm:text-5xl md:text-6xl
+                        lg:text-[58px]
+                        leading-[1.1]
+                        font-bold
+                        tracking-tight
+                       text-white">
+                        Find Your Internship
+                        <br class="hidden sm:block">
+                        Opportunities
+                    </h1>
+                    <p class="mt-6
+                       max-w-[650px]
+                       text-base md:text-lg
+                       leading-8
+                       text-white/90">
+                        Gain real world experience, build your skills, and take the next step in your career journey.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row items-start gap-4">
+                        <a href="#career-job.html" class="inline-flex items-center justify-center
+                            gap-3
+                            px-8 py-4
+                            rounded-xl
+                          bg-blue-600
+                          hover:bg-blue-700
+                          text-white
+                            font-semibold
+                            transition duration-200
+                            shadow-lg shadow-blue-900/20">
+                            Explore Opportunities
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="mt-14 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-[680px]">
+                        <div class="rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm px-5 py-4">
+                            <p class="text-white/70 text-xs md:text-sm">Partner Companies</p>
+                            <p class="text-white text-2xl md:text-3xl font-bold mt-1">25+</p>
+                        </div>
+                        <div class="rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm px-5 py-4">
+                            <p class="text-white/70 text-xs md:text-sm">Students Placed</p>
+                            <p class="text-white text-2xl md:text-3xl font-bold mt-1">15,000+</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm px-5 py-4 col-span-2 sm:col-span-1">
+                            <p class="text-white/70 text-xs md:text-sm">Application Fee</p>
+                            <p class="text-white text-2xl md:text-3xl font-bold mt-1">$0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------Search Section---------->
+        <section class="px-6 lg:px-12 mt-8 relative z-20">
+            <div class="max-w-6xl bg-white rounded-2xl border border-slate-200 shadow-lg p-4 sm:p-5">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="flex-1 m-auto relative">
+                        <i
+                            class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" id="searchInput" placeholder="Search by position or company..."
+                            class="w-full pl-11 pr-4 py-3 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+                    </div>
+                    <select id="categorySelect"
+                        class="px-4 py-3 text-sm rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <option value="">All Categories</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Design">Design</option>
+                        <option value="IT Support">IT Support</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Data Analytics">Data Analytics</option>
+                    </select>
+                    <select id="sectorSelect"
+                        class="px-4 py-3 text-sm rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <option value="">All Sectors</option>
+                        <option value="Private Sector">Private Sector</option>
+                        <option value="Public Sector">Public Sector</option>
+                    </select>
+                    <button id="searchButton" type="button" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl
+                          bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition">Search
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div id="resultsContainer" class="px-6 lg:px-12 mt-8 grid gap-4">
+        </div>
+        <!-------Job Section---------->
+        <section class="py-16 px-6 lg:px-12 bg-slate-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-end justify-between mb-8">
+                    <div>
+                        <h2 class="font-poppins text-2xl md:text-3xl font-bold text-slate-900">Open Internships</h2>
+                        <p class="text-slate-500 mt-1">12 internships found</p>
+                    </div>
+                    <a href="career.html"
+                        class="hidden sm:inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition">
+                        View all <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://i.pinimg.com/736x/ca/c8/de/cac8de147d994f5fa782e7507ed6e049.jpg"
+                                        alt="smart.co,ltd" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Smart Axita</p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                         bg-emerald-50 text-emerald-600">Private Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Web Development Intern</h3>
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $150 – $250 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 30 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                            text-white font-poppins font-bold text-sm">
+                                    <img src="https://i.pinimg.com/1200x/06/e9/4c/06e94cc0a6c032b6ce65a67b32ed4bf7.jpg"
+                                        alt="KB brasac bank" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">KB PRASAC Bank</p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                         bg-teal-100 text-emerald-600">Private Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Frontend Developer Intern</h3>
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $200 – $300 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 5 Nov 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQue7sKUjP6IljvxEbe5Z4mNAeM7wjW7t05xN3zUVvouw&s=10"
+                                        alt="" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Chip Mong Bank
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Private Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">IT Support Intern</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $120 – $180 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!----Card4------->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3jEMDsFa00bicGpqdhoSnDg9pkuLcCpeg56LlbCYWpg&s=10"
+                                        alt="" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">ក្រសួងការងារ
+                                        និងបណ្តុះបណ្តាលវិជ្ជាជីវៈ (MLVT)
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Public Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Digital Content Intern</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $300 – $400 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!----Card5------>
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXaK3C1mSwv3IPOgcZhPWdt_hJH7gRY3V-sfIGbLhGFA&s=10"
+                                        alt="PPCC bank" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">PPCBank
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Private Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Accounting Officer</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $350 – $400/ month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!-----Card6------>
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQc_RbHtfR4G1TQsiVaZ7FOiOOD2F5g5yS8knqZ_sXvg&s=10"
+                                        alt="" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">AHU Technologies
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Private Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">UX/UI Design Intern</h3>
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $200 – $380 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!-----Card7------>
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIrmXClCBMnLijdzz426t78r83iCIL9f4opi1LzAkg6w&s=10"
+                                        alt="company logo" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">UNICEF Cambodia
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Public Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Backend Developer Intern</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $300 – $400 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!-----Card8------->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27EewIt1O-tNQh-xR0aplo4C_vfgQMD7FLCHiOZtqww&s=10"
+                                        alt="Company logo" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Technology Solution
+                                        Development TSD Co., Ltd.
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Private Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Full-Stack Developer Intern</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $400– $450/ month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!-----Card9---->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPeswirfv6BGdViZEXAE_bUF_ugp3wWPe49AnbWp-Z1Q&s=10"
+                                        alt="company logo" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">ក្រសួងប្រៃសណីយ៍
+                                        និងទូរគមនាគមន៍ (MPTC)
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Public Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Data Analyst Intern</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $120 – $180 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!----Card10---->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRrFqo-2-cNpCQljjLES7NxxoC91z6HcdqLP72xiYl_A&s=10"
+                                        alt="company logo" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Ministry of Education,
+                                        Youth and Sport (MoEYS)
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Public Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Digital Education</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $280– $380 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!----Card11------>
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVQQWjlHnv_8Kgk52WICBwiki9cMt4BWj47cjaJGy3g&s=10"
+                                        alt="company logo" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">National Bank of
+                                        Cambodia (NBC)
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Public Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Cybersecurity Intern</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $400 – $480 / month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    <!----Card12------>
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                     text-white font-poppins font-bold text-sm">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bsMcq6nXHkUqbHpmmbavdY_r2B205xpIYjIrgeTgBw&s=10"
+                                        alt="company logo" class="rounded-xl">
+                                </div>
+                                <div>
+                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Cambodia Academy of
+                                        Digital Technology (CADT)
+                                    </p>
+                                    <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
+                                     bg-rose-50 text-rose-600">Public Sector</span>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Administrative Intern</h3>
+
+                        <div class="mt-4 space-y-2 text-sm text-slate-500">
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
+                            <p class="flex items-center gap-2"><i
+                                    class="fa-solid fa-sack-dollar w-4 text-slate-400"></i> $380 – $/ month</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-clock w-4 text-slate-400"></i> 3
+                                months</p>
+                            <p class="flex items-center gap-2"><i class="fa-regular fa-calendar w-4 text-slate-400"></i>
+                                Deadline: 20 Oct 2026</p>
+                        </div>
+                        <a href="/pages/apply.html" class="mt-5 flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
+                                   border border-blue-600 text-blue-600 font-semibold text-sm
+                                   hover:bg-blue-600 hover:text-white transition">
+                            Apply Now<i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-[#0F172A] py-10 px-6 lg:px-12 border-t border-white/10">
+        <div class="flex flex-col lg:flex-row justify-between gap-10 md:grid grid-cols-4">
+            <!-- Brand -->
+            <div class="flex gap-4 max-w-xs md:items-start *:overflow-hidden">
+                <img src="/public/img/logo2.png" alt="Internship & Career Guide logo" class="h-24 w-18 shrink-0">
+                <span class="text-white text-base leading-6">
+                    <span class="font-bold block mb-1 md:overflow-hidden">Internship & Career Guide</span>
+                    <span class="text-white/70 text-sm md:overflow-hidden">
+                        Helping university students navigate the journey from classroom to career.
+                    </span>
+                </span>
+            </div>
+            <!-- Page -->
+            <!-- <div class="md:grid grid-cols-3"> -->
+            <div class="flex flex-col gap-3">
+                <h3 class="text-white text-base font-semibold mb-1">Page</h3>
+                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Home</a>
+                <a href="explore.html" class="text-white/70 hover:text-white text-sm transition-colors">Explore</a>
+                <a href="career-job.html" class="text-white/70 hover:text-white text-sm transition-colors">Career
+                    Jobs</a>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Resources</a>
+                <a href="internship.html"
+                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
+            </div>
+            <!-- Resources -->
+            <div class="flex flex-col gap-3">
+                <h3 class="text-white text-base font-semibold mb-1">Resources</h3>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">CV
+                    Template</a>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Interview
+                    Q&A</a>
+                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Application
+                    Checklist</a>
+                <a href="internship.html"
+                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
+            </div>
+            <!-- About -->
+            <div class="flex flex-col gap-3">
+                <h3 class="text-white text-base font-semibold mb-1">About</h3>
+                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">This
+                    Site</a>
+                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Your
+                    Journey</a>
+                <a href="internship.html"
+                    class="text-white/70 hover:text-white text-sm transition-colors">Newsletter</a>
+            </div>
+        </div>
+        </div>
+        <div class="mt-10 pt-6 border-t border-white/10 text-center text-white/50 text-xs">
+            &copy; 2026 Internship & Career Guide. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+    </script>
+    <script type="module" src="/src/main.js"></script>
+
+
+
+</body>
+
+</html>
