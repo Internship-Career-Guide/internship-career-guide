@@ -165,19 +165,18 @@
                             transition duration-200
                             shadow-lg shadow-blue-900/20">
                             Explore Resources
-                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            <i class="fa-solid fa-arrow-right" class="w-5 h-5 text-white"></i>
                         </a>
-                        <a href="" class="inline-flex items-center justify-center
-                        px-6 py-3
-                        min-h-[56px]
-                        rounded-full
-                        border-2 border-white/80
-                        hover:bg-white
-                        hover:text-[#0F3D3E]
-                        text-white
-                        font-semibold
-                        whitespace-nowrap
-                        transition duration-200">
+                        <a href="resource.html" class="inline-flex items-center justify-center px-6 py-3
+                             min-h-[56px]
+                             rounded-full
+                             border-2 border-white/80
+                             hover:bg-white
+                            **:hover:text-[#0F3D3E]
+                            text-white
+                            ont-semibold
+                            whitespace-nowrap
+                            transition duration-200">
                             Prepare Your CV
                         </a>
                     </div>
@@ -746,7 +745,6 @@
                         Click each question to see a suggested approach to answering it.
                     </p>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
-
                         <!--Left Column-->
                         <div>
                             <h3 class="text-xl text-blue-700 font-semibold md:text-2xl mb-2">
@@ -756,38 +754,89 @@
                                 Practice these questions aloud. Click to reveal tips on how to answer.
                             </p>
                             <div class="flex flex-col gap-4">
-
-                                <button type="button"
-                                    class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
-                                            shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                    <span class="font-semibold text-blue-950 text-left">"Tell me about yourself?"</span>
-                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
-                                </button>
-                                <button type="button"
-                                    class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
-                                            shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                    <span class="font-semibold text-blue-950 text-left">"Why are you interested in this
-                                        role?"</span>
-                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
-                                        shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                    <span class="font-semibold text-blue-950 text-left">"What are your strengths and
-                                        weaknesses?"</span>
-                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
-                                        shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                    <span class="font-semibold text-blue-950 text-left">"Describe a challenge you faced
-                                        and how you handled it."</span>
-                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" class="w-full border border-slate-200 py-4 px-4 flex items-center justify-between rounded-xl
-                                        shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                    <span class="font-semibold text-blue-950 text-left">"Do you have any questions fo
-                                        us?"</span>
-                                    <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
-                                </button>
+                                <!-- Question 1 -->
+                                <div
+                                    class="border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <button type="button" onclick="toggleFAQ(this)"
+                                        class="w-full py-4 px-4 flex items-center justify-between">
+                                        <span class="font-semibold text-blue-950 text-left">"Tell me about
+                                            yourself?"</span>
+                                        <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="faq-answer hidden px-4 pb-4">
+                                        <p class="text-base text-gray-600">
+                                            Use the Present-Past-Future formula: briefly describe what you are studying
+                                            now,
+                                            mention relevant past experiences or projects, and share what you hope to do
+                                            in the future. Keep it to 60-90 seconds.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Question 2 -->
+                                <div
+                                    class="border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <button type="button" onclick="toggleFAQ(this)"
+                                        class="w-full py-4 px-4 flex items-center justify-between">
+                                        <span class="font-semibold text-blue-950 text-left">"Why are you interested in
+                                            this role?"</span>
+                                        <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="faq-answer hidden px-4 pb-4">
+                                        <p class="text-base text-gray-600">
+                                            Connect the role to your skills and career goals. Mention something specific
+                                            about the company or team that genuinely excites you, not just generic
+                                            praise.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Question 3 -->
+                                <div
+                                    class="border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <button type="button" onclick="toggleFAQ(this)"
+                                        class="w-full py-4 px-4 flex items-center justify-between">
+                                        <span class="font-semibold text-blue-950 text-left">"What are your strengths and
+                                            weaknesses?"</span>
+                                        <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="faq-answer hidden px-4 pb-4">
+                                        <p class="text-base text-gray-600">
+                                            Pick a strength relevant to the job with a real example. For weaknesses,
+                                            choose something genuine and explain the steps you're taking to improve it.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Question 4 -->
+                                <div
+                                    class="border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <button type="button" onclick="toggleFAQ(this)"
+                                        class="w-full py-4 px-4 flex items-center justify-between">
+                                        <span class="font-semibold text-blue-950 text-left">"Describe a challenge you
+                                            faced and how you handled it."</span>
+                                        <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="faq-answer hidden px-4 pb-4">
+                                        <p class="text-base text-gray-600">
+                                            Use the STAR method: Situation, Task, Action, Result. Focus most of your
+                                            answer on the specific actions you took and the positive outcome.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Question 5 -->
+                                <div
+                                    class="border border-slate-200 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                    <button type="button" onclick="toggleFAQ(this)"
+                                        class="w-full py-4 px-4 flex items-center justify-between">
+                                        <span class="font-semibold text-blue-950 text-left">"Do you have any questions
+                                            for us?"</span>
+                                        <i class="fa fa-plus flex-shrink-0 text-blue-900" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="faq-answer hidden px-4 pb-4">
+                                        <p class="text-base text-gray-600">
+                                            Always say yes. Ask about team structure, what success looks like in the
+                                            role after 90 days, or what they enjoy about working there.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- RIGHT COLUMN -->
@@ -805,7 +854,6 @@
                                         Dress one level more formal than the company's daily dress code.
                                     </p>
                                 </div>
-
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
                                         <i class="fa-solid fa-clock h-8 w-8 text-blue-800"></i></span>
@@ -813,10 +861,9 @@
                                         Arrive 10-15 minutes early to settle in and stay calm.
                                     </p>
                                 </div>
-
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class=" fa-solid fa-copy h-8 w-8 text-blue-800"></i></span>
+                                        <i class="fa-solid fa-copy h-8 w-8 text-blue-800"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         Bring extra copies of your resume and a notepad.
                                     </p>
@@ -837,14 +884,14 @@
                                 </div>
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class="fa fa-envelope" aria-hidden="true h-8 w-8 text-blue-800"></i></span>
+                                        <i class="fa fa-envelope h-8 w-8 text-blue-800" aria-hidden="true"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         Send a thank-you email within 24 hours of the interview.
                                     </p>
                                 </div>
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class="fa fa-reply" aria-hidden="true h-8 w-8 text-blue-800"></i></span>
+                                        <i class="fa fa-reply h-8 w-8 text-blue-800" aria-hidden="true"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         It is okay to pause and think before answering a difficult question.
                                     </p>
@@ -1014,17 +1061,36 @@
         </div>
     </footer>
     <!-- ========================= JAVASCRIPT========================== -->
-
     <script>
-
         const menuBtn = document.getElementById("menuBtn");
         const mobileMenu = document.getElementById("mobileMenu");
 
         menuBtn.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
         });
-
     </script>
+    <script>
+        function toggleFAQ(button) {
+            const wrapper = button.parentElement
+            const answer = wrapper.querySelector('.faq-answer')
+            const icon = button.querySelector('i')
+
+            answer.classList.toggle('hidden')
+
+            if (answer.classList.contains('hidden')) {
+                icon.classList.remove('fa-minus')
+                icon.classList.add('fa-plus')
+            } else {
+                icon.classList.remove('fa-plus')
+                icon.classList.add('fa-minus')
+            }
+        }
+    </script>
+
+
+
+
+
 </body>
 
 </html>
