@@ -32,19 +32,18 @@
     <script>
         lucide.createIcons();
     </script>
-
 </head>
 
 <body class="bg-white text-[#0F172A] font-inter">
     <!------Navbar-------- -->
     <header class="w-full bg-white border-b border-slate-100">
-        <nav class="max-w-[1440px] mx-auto min-h-[72px] lg:h-[100px] px-4 sm:px-6 lg:px-12
+        <nav class="max-w-[1440px] mx-auto min-h-[72px] lg:h-[80px] px-4 sm:px-6 lg:px-12
                     flex items-center justify-between py-2">
-            <a href="../index.html" class="flex items-center gap-2 group min-w-0">
-                <img src="/public/img/logo2.png" alt="logo"
-                    class="h-10 w-10 sm:h-12 sm:w-12 lg:h-16 lg:w-16 object-contain shrink-0">
+            <a href="../index.html" class="flex items-center gap-3 group min-w-0">
+                <img src="/public/img/logo3.png" alt="logo"
+                    class="h-10 w-10 sm:h-12 sm:w-12 lg:h-10 lg:w-10 object-contain shrink-0">
                 <span class="font-poppins font-bold lg:text-lg md:text-xl
-                             text-blue-600 whitespace-nowrap sm:text-base truncate">
+                             text-blue-700 whitespace-nowrap sm:text-base truncate">
                     Internship & Career Guide
                 </span>
             </a>
@@ -70,7 +69,7 @@
                 </a>
                 <!-- Active Page-->
                 <a href="internship.html" class="relative py-3 text-[16px] font-semibold text-blue-600">Internship
-                    <span class="absolute left-0 right-0 -bottom-[17px] h-[3px] rounded-full bg-blue-600"></span>
+                    <span class="absolute left-0 right-0 -bottom-[10px] h-[2px] rounded-full bg-blue-600"></span>
                 </a>
             </div>
             <!--Responsive -->
@@ -185,8 +184,8 @@
                     <div class="flex-1 m-auto relative">
                         <i
                             class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
-                        <input type="text" id="searchInput" placeholder="Search by position or company..."
-                            class="w-full pl-11 pr-4 py-3 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+                        <input type="text" id="searchInput" placeholder="Search by position or company..." class=" w-full pl-11 pr-4 py-3 text-sm rounded-xl border border-slate-200 bg-slate-50
+                        focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
                     </div>
                     <select id="categorySelect"
                         class="px-4 py-3 text-sm rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
@@ -196,6 +195,7 @@
                         <option value="IT Support">IT Support</option>
                         <option value="Marketing">Marketing</option>
                         <option value="Data Analytics">Data Analytics</option>
+                        <option value="Administration">Administration</option>
                     </select>
                     <select id="sectorSelect"
                         class="px-4 py-3 text-sm rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
@@ -211,9 +211,10 @@
         </section>
         <div id="resultsContainer" class="px-6 lg:px-12 mt-8 grid gap-4">
         </div>
+
         <!-------Job Section---------->
         <section class="py-16 px-6 lg:px-12 bg-slate-50">
-            <div class="max-w-6xl mx-auto">
+            <div class=" product-list max-w-6xl mx-auto">
                 <div class="flex items-end justify-between mb-8">
                     <div>
                         <h2 class="font-poppins text-2xl md:text-3xl font-bold text-slate-900">Open Internships</h2>
@@ -224,10 +225,12 @@
                         View all <i class="fa-solid fa-arrow-right text-sm"></i>
                     </a>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div id="product-list" class=" product-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
                     <!-- Card 1 -->
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Web Development" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -236,7 +239,8 @@
                                         alt="smart.co,ltd" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Smart Axita</p>
+                                    <p class="company font-poppins font-semibold text-slate-900 text-sm">Smart Axita
+                                    </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
                                          bg-emerald-50 text-emerald-600">Private Sector</span>
                                 </div>
@@ -245,7 +249,7 @@
                                 <i class="fa-regular fa-heart text-lg"></i>
                             </button>
                         </div>
-                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Web Development Intern</h3>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Web Developer Intern</h3>
                         <div class="mt-4 space-y-2 text-sm text-slate-500">
                             <p class="flex items-center gap-2"><i
                                     class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
@@ -263,8 +267,9 @@
                         </a>
                     </div>
                     <!-- Card 2 -->
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product  bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="IT Support" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -273,7 +278,9 @@
                                         alt="KB brasac bank" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">KB PRASAC Bank</p>
+                                    <p class=" company font-poppins font-semibold text-slate-900 text-sm">KB PRASAC
+                                        Bank
+                                    </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
                                          bg-teal-100 text-emerald-600">Private Sector</span>
                                 </div>
@@ -282,7 +289,8 @@
                                 <i class="fa-regular fa-heart text-lg"></i>
                             </button>
                         </div>
-                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Frontend Developer Intern</h3>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Frontend Developer Intern
+                        </h3>
                         <div class="mt-4 space-y-2 text-sm text-slate-500">
                             <p class="flex items-center gap-2"><i
                                     class="fa-solid fa-location-dot w-4 text-slate-400"></i> Phnom Penh</p>
@@ -300,8 +308,9 @@
                         </a>
                     </div>
                     <!-- Card 3 -->
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="IT Support" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -310,7 +319,8 @@
                                         alt="" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Chip Mong Bank
+                                    <p class=" company font-poppins font-semibold text-slate-900 text-sm">Chip Mong
+                                        Bank
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
                                      bg-rose-50 text-rose-600">Private Sector</span>
@@ -339,8 +349,9 @@
                         </a>
                     </div>
                     <!----Card4------->
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Web Development" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -349,7 +360,8 @@
                                         alt="" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">ក្រសួងការងារ
+                                    <p class=" company font-poppins font-semibold text-slate-900 text-sm">
+                                        ក្រសួងការងារ
                                         និងបណ្តុះបណ្តាលវិជ្ជាជីវៈ (MLVT)
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
@@ -379,8 +391,9 @@
                         </a>
                     </div>
                     <!----Card5------>
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product  bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Web Development" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -389,7 +402,7 @@
                                         alt="PPCC bank" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">PPCBank
+                                    <p class="company font-poppins font-semibold text-slate-900 text-sm">PPCBank
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
                                      bg-rose-50 text-rose-600">Private Sector</span>
@@ -418,8 +431,9 @@
                         </a>
                     </div>
                     <!-----Card6------>
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Design" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -428,7 +442,8 @@
                                         alt="" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">AHU Technologies
+                                    <p class="company font-poppins font-semibold text-slate-900 text-sm">AHU
+                                        Technologies
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
                                      bg-rose-50 text-rose-600">Private Sector</span>
@@ -456,8 +471,9 @@
                         </a>
                     </div>
                     <!-----Card7------>
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Web Development" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -466,7 +482,8 @@
                                         alt="company logo" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">UNICEF Cambodia
+                                    <p class="companyfont-poppins font-semibold text-slate-900 text-sm">UNICEF
+                                        Cambodia
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
                                      bg-rose-50 text-rose-600">Public Sector</span>
@@ -495,8 +512,9 @@
                         </a>
                     </div>
                     <!-----Card8------->
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Web Development" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -505,7 +523,8 @@
                                         alt="Company logo" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Technology Solution
+                                    <p class="company font-poppins font-semibold text-slate-900 text-sm">Technology
+                                        Solution
                                         Development TSD Co., Ltd.
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
@@ -516,7 +535,8 @@
                                 <i class="fa-regular fa-heart text-lg"></i>
                             </button>
                         </div>
-                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Full-Stack Developer Intern</h3>
+                        <h3 class="font-poppins font-bold text-lg text-slate-900 mt-4">Full-Stack Developer Intern
+                        </h3>
 
                         <div class="mt-4 space-y-2 text-sm text-slate-500">
                             <p class="flex items-center gap-2"><i
@@ -535,8 +555,9 @@
                         </a>
                     </div>
                     <!-----Card9---->
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product   bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Data Analytics" data-sector="Public Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -545,7 +566,8 @@
                                         alt="company logo" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">ក្រសួងប្រៃសណីយ៍
+                                    <p class="company font-poppins font-semibold text-slate-900 text-sm">
+                                        ក្រសួងប្រៃសណីយ៍
                                         និងទូរគមនាគមន៍ (MPTC)
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
@@ -575,8 +597,9 @@
                         </a>
                     </div>
                     <!----Card10---->
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product  bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Web Development" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -585,7 +608,8 @@
                                         alt="company logo" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Ministry of Education,
+                                    <p class="company font-poppins font-semibold text-slate-900 text-sm">Ministry of
+                                        Education,
                                         Youth and Sport (MoEYS)
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
@@ -615,8 +639,10 @@
                         </a>
                     </div>
                     <!----Card11------>
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product   bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="IT Support" data-sector="Public Sector">
+
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="w-11 h-11 rounded-lg flex items-center justify-center
@@ -625,7 +651,9 @@
                                         alt="company logo" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">National Bank of
+                                    <p class="company font-poppins font-semibold text-slate-900 text-sm">National
+                                        Bank
+                                        of
                                         Cambodia (NBC)
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
@@ -655,17 +683,19 @@
                         </a>
                     </div>
                     <!----Card12------>
-                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6
-                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="product   bg-white rounded-xl border border-slate-200 shadow-sm p-6
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        data-category="Web Development" data-sector="Private Sector">
                         <div class="flex items-start justify-between">
                             <div class="flex items-center gap-3">
-                                <div class="w-11 h-11 rounded-lg flex items-center justify-center
+                                <div class="w-11 h-11 rounded-l g flex items-center justify-center
                                      text-white font-poppins font-bold text-sm">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bsMcq6nXHkUqbHpmmbavdY_r2B205xpIYjIrgeTgBw&s=10"
                                         alt="company logo" class="rounded-xl">
                                 </div>
                                 <div>
-                                    <p class="font-poppins font-semibold text-slate-900 text-sm">Cambodia Academy of
+                                    <p class=" company font-poppins font-semibold text-slate-900 text-sm">Cambodia
+                                        Academy of
                                         Digital Technology (CADT)
                                     </p>
                                     <span class="inline-block mt-1 text-[11px] font-semibold px-2 py-0.5 rounded-full
@@ -700,67 +730,121 @@
         </section>
 
     </main>
-    <footer class="bg-[#0F172A] py-10 px-6 lg:px-12 border-t border-white/10">
-        <div class="flex flex-col lg:flex-row justify-between gap-10 md:grid grid-cols-4">
-            <!-- Brand -->
-            <div class="flex gap-4 max-w-xs md:items-start *:overflow-hidden">
-                <img src="/public/img/logo2.png" alt="Internship & Career Guide logo" class="h-24 w-18 shrink-0">
-                <span class="text-white text-base leading-6">
-                    <span class="font-bold block mb-1 md:overflow-hidden">Internship & Career Guide</span>
-                    <span class="text-white/70 text-sm md:overflow-hidden">
-                        Helping university students navigate the journey from classroom to career.
-                    </span>
-                </span>
+    <footer class="bg-[#0F172A] border-t border-white/10 px-6 py-10 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+            <!-- Footer Main Content -->
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Brand -->
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-start gap-3">
+                        <img src="/public/img/logo3.png" alt="Internship & Career Guide logo"
+                            class="h-10 w-10 shrink-0 object-contain">
+                        <div>
+                            <h3 class="text-base font-bold leading-6 text-white">
+                                Internship & Career Guide
+                            </h3>
+
+                            <p class="mt-2 max-w-xs text-sm leading-6 text-white/60">
+                                Helping university students navigate the journey
+                                from classroom to career.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="mt-6 flex items-center gap-3">
+                        <a href="https://letsintern.in/" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-youtube text-sm"></i>
+                        </a>
+                        <a href="https://www.facebook.com/groups/929881051811883/" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/jobs/search-results/?currentJobId=4450880373&keywords=Intern%20jobs&originalSubdomain=kh"
+                            aria-label="LinkedIn" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://t.me/CBjobopportunity" aria-label="Telegram" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-telegram text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Pages -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        Pages
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Home
+                        </a>
+                        <a href="explore.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Explore
+                        </a>
+                        <a href="career-job.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Career Jobs
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Resources
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Internship
+                        </a>
+                    </div>
+                </div>
+                <!-- Resources -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        Resources
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            CV Template
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Interview Q&A
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Application Checklist
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Internship
+                        </a>
+                    </div>
+                </div>
+                <!-- About -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        About
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            This Site
+                        </a>
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Your Journey
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Newsletter
+                        </a>
+                    </div>
+                </div>
             </div>
-            <!-- Page -->
-            <!-- <div class="md:grid grid-cols-3"> -->
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">Page</h3>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Home</a>
-                <a href="explore.html" class="text-white/70 hover:text-white text-sm transition-colors">Explore</a>
-                <a href="career-job.html" class="text-white/70 hover:text-white text-sm transition-colors">Career
-                    Jobs</a>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Resources</a>
-                <a href="internship.html"
-                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
+            <!-- Bottom -->
+            <div class="mt-10 border-t border-white/10 pt-6 text-center">
+                <p class="text-xs text-white/50">
+                    &copy; 2026 Internship & Career Guide. All rights reserved.
+                </p>
             </div>
-            <!-- Resources -->
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">Resources</h3>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">CV
-                    Template</a>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Interview
-                    Q&A</a>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Application
-                    Checklist</a>
-                <a href="internship.html"
-                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
-            </div>
-            <!-- About -->
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">About</h3>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">This
-                    Site</a>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Your
-                    Journey</a>
-                <a href="internship.html"
-                    class="text-white/70 hover:text-white text-sm transition-colors">Newsletter</a>
-            </div>
-        </div>
-        </div>
-        <div class="mt-10 pt-6 border-t border-white/10 text-center text-white/50 text-xs">
-            &copy; 2026 Internship & Career Guide. All rights reserved.
         </div>
     </footer>
-    <script>
-        const menuBtn = document.getElementById("menuBtn");
-        const mobileMenu = document.getElementById("mobileMenu");
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-
-    </script>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/internship.js"></script>
 
 
 
