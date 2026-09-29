@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship & Career Guide</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
+    
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script>
         window.tailwind = window.tailwind || {};
         window.tailwind.config = {
@@ -42,109 +43,376 @@
 
 <body>
     <header class="w-full bg-white border-b border-slate-100">
-        <nav class="max-w-[1440px] mx-auto h-[100px] px-6 lg:px-12 flex items-center justify-between">
-            <a href="../index.html" class="flex items-center gap-2 group">
-                <img src="../public/img/img.png" alt="Internship &amp; Career Guide logo" class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-28 lg:h-28 object-contain">
-                <span class="font-poppins font-bold text-xs sm:text-sm md:text-xl lg:text-lg text-blue-600 whitespace-nowrap">Internship &amp; Career Guide</span>
+        <nav class="max-w-[1440px] mx-auto min-h-[72px] lg:h-[80px] px-4 sm:px-6 lg:px-12
+                    flex items-center justify-between py-2">
+            <a href="../index.html" class="flex items-center gap-3 group min-w-0">
+                <img src="../public/img/newlogo.png" alt="logo"
+                    class="h-10 w-10 sm:h-12 sm:w-12 lg:h-10 lg:w-10 object-contain shrink-0">
+                <span class="font-poppins font-bold lg:text-lg md:text-xl
+                             text-blue-700 whitespace-nowrap sm:text-base truncate">
+                    Internship & Career Guide
+                </span>
             </a>
+            <div class="hidden lg:flex items-center gap-10">
 
-            <div class="hidden lg:flex items-center gap-10" aria-label="Main navigation">
-                <a href="../index.html" class="relative py-3 text-[16px] font-semibold text-slate-800 hover:text-blue-600 transition">Home</a>
-                <a href="explore.html" class="relative py-3 text-[16px] font-semibold text-blue-600" aria-current="page">
-                    Explore
-                    <span class="absolute left-0 right-0 -bottom-[17px] h-[3px] rounded-full bg-blue-600"></span>
+                <a href="../index.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Home
                 </a>
-                <a href="career-job.html" class="relative py-3 text-[16px] font-semibold text-slate-800 hover:text-blue-600 transition">Career Job</a>
-                <a href="resources.html" class="relative py-3 text-[16px] font-semibold text-slate-800 hover:text-blue-600 transition">Resource</a>
-                <a href="internships.html" class="relative py-3 text-[16px] font-semibold text-slate-800 hover:text-blue-600 transition">Internship</a>
+                <!-- Active Page-->
+                <a href="explore.html" class="relative py-3 text-[16px] font-semibold text-blue-600">Explores
+                    <span class="absolute left-0 right-0 -bottom-[10px] h-[2px] rounded-full bg-blue-600"></span>
+                </a>
+
+
+                <a href="career.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Career Jobs
+                </a>
+                <a href="resource.html" class="relative py-3 text-[16px] font-semibold 
+                          text-slate-800 hover:text-blue-600 transition">
+                    Resources
+                </a>
+                <!-- Active Page-->
+
+                <a href="internship.html" class="relative py-3 text-[16px] font-semibold
+                           text-slate-800 hover:text-blue-600 transition">
+                    Internship
+                </a>
             </div>
-
-            <button id="menuBtn" class="lg:hidden p-2 rounded-lg text-slate-800 hover:bg-slate-100" type="button" aria-label="Open menu" aria-expanded="false">
-                <span class="text-xl px-2 py-2 rounded-md" aria-hidden="true">&#9776;</span>
+            <!--Responsive -->
+            <button id="menuBtn" class="lg:hidden p-2 rounded-lg
+                       text-slate-800 hover:bg-slate-100 shrink-0">
+                <span class="lg:hidden text-xl  px-2 py-2 rounded-md">
+                    <i class="fa-solid fa-bars"></i></span>
             </button>
-        </nav>
 
+        </nav>
+        <!-- Mobile Navigation -->
         <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-100 bg-white">
             <div class="px-6 py-5 flex flex-col gap-4">
-                <a href="../index.html" class="py-2 font-semibold text-slate-700">Home</a>
-                <a href="explore.html" class="py-2 font-semibold text-blue-600" aria-current="page">Explore</a>
-                <a href="career-job.html" class="py-2 font-semibold text-slate-700">Career Job</a>
-                <a href="resources.html" class="py-2 font-semibold text-slate-700">Resource</a>
-                <a href="internships.html" class="py-2 font-semibold text-slate-700">Internship</a>
+                <a href="../index.html" class="py-2 font-semibold text-slate-700">
+                    Home
+                </a>
+                <a href="explore.html" class="py-2 font-semibold text-slate-700">
+                    Explore
+                </a>
+                <a href="career-job.html" class="py-2 font-semibold text-slate-700">
+                    Career Job
+                </a>
+                <a href="resource.html" class="py-2 font-semibold text-blue-600">
+                    Resource
+                </a>
+                <a href="internship.html" class="py-2 font-semibold text-slate-700">
+                    Internship
+                </a>
             </div>
         </div>
     </header>
 
-        <section id="home" class="hero">
-            <div class="hero-image-overlay"></div>
-            <div class="hero-content hero-content-reference">
-                <div class="hero-copy hero-copy-reference">
-                    <span class="eyebrow reference-eyebrow">Explore your career job</span>
-                    <h1 class="reference-title">Career Guide<br><span>Explore Career</span></h1>
-                    <p class="reference-copy">Learn how to explore career options, understand the job market, and make confident decisions about your future.</p>
-                    <button id="findInternship" class="primary-button reference-button" type="button"><span>Find Internship</span><span class="arrow" aria-hidden="true">&#8594;</span></button>
+
+
+    <section id="home" class="hero">
+        <div class="hero-image-overlay"></div>
+        <div class="hero-content hero-content-reference">
+            <div class="hero-copy hero-copy-reference">
+                <span class="eyebrow reference-eyebrow">Explore your career job</span>
+                <h1 class="reference-title">Career Guide<br><span>Explore Career</span></h1>
+                <p class="reference-copy">Learn how to explore career options, understand the job market, and make
+                    confident decisions about your future.</p>
+                <button id="findInternship" class="primary-button reference-button" type="button"><span>Find
+                        Internship</span><span class="arrow" aria-hidden="true">&#8594;</span></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore" class="explore section-light">
+        <div class="section-inner">
+            <div class="explore-copy"><span class="step-label">Step 1 - Explore</span>
+                <h2>Why Career Exploration Matters?</h2>
+                <p>As a university student, choosing a career can feel overwhelming. The good news is that career
+                    exploration is a process, so you do not need to have all the answers right away.</p>
+                <p>Research shows that students who actively explore careers are more likely to find fulfilling jobs
+                    after graduation. This guide will walk you through a proven framework for career exploration, step
+                    by step.</p>
+            </div><img class="section-image"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=85"
+                alt="Students discussing careers">
+        </div>
+    </section>
+
+    <section id="yourself" class="section-light">
+        <div class="section-inner">
+            <div class="section-heading"><span class="step-label">Step 2 - Self-Assessment</span>
+                <h2>Know Yourself First</h2>
+                <p>Before choosing a career, understand your interests, strengths, skills, personality, and values.</p>
+            </div>
+            <div class="card-grid four">
+                <article class="info-card"><span class="card-icon">&#9829;</span>
+                    <h3>Interests</h3>
+                    <p>What activities, subjects, or topics do you enjoy?</p>
+                </article>
+                <article class="info-card"><span class="card-icon">&#9733;</span>
+                    <h3>Strengths</h3>
+                    <p>Identify the things you can do well.</p>
+                </article>
+                <article class="info-card"><span class="card-icon">&#128736;</span>
+                    <h3>Skills</h3>
+                    <p>Think about technical and soft skills you have.</p>
+                </article>
+                <article class="info-card"><span class="card-icon">&#10024;</span>
+                    <h3>Values</h3>
+                    <p>Understand what is important to you at work.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section-light">
+        <div class="section-inner">
+            <div class="section-heading"><span class="step-label">Step 3 - Research</span>
+                <h2>How to Research Careers</h2>
+                <p>Follow these steps to learn more about your career choices.</p>
+            </div>
+            <div class="card-grid four">
+                <article class="info-card"><b>01</b>
+                    <h3>Search Online</h3>
+                    <p>Explore career websites, job platforms, company websites, and professional resources.</p>
+                </article>
+                <article class="info-card"><b>02</b>
+                    <h3>Talk to Professionals</h3>
+                    <p>Interview people who already work in the career you are interested in.</p>
+                </article>
+                <article class="info-card"><b>03</b>
+                    <h3>Compare Requirements</h3>
+                    <p>Compare education, skills, salary, responsibilities, and career growth.</p>
+                </article>
+                <article class="info-card"><b>04</b>
+                    <h3>Make a Career Plan</h3>
+                    <p>Create an action plan with skills, education, projects, internships, and goals.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="jobs" class="section-light">
+        <div class="section-inner">
+            <div class="section-heading"><span class="step-label">Step 4 - Understand the Market</span>
+                <h2>Job Market Trends (2024-2026)</h2>
+                <p>Explore examples of growing career areas and the skills employers commonly look for.</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Growth Rate</th>
+                            <th>Demand Level</th>
+                            <th>Key Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Software Development</td>
+                            <td>25%</td>
+                            <td><span class="badge high">Very High</span></td>
+                            <td>JavaScript, Python, Git</td>
+                        </tr>
+                        <tr>
+                            <td>Software Development</td>
+                            <td>20%</td>
+                            <td><span class="badge high">Very High</span></td>
+                            <td>SQL, Python, Tableau</td>
+                        </tr>
+                        <tr>
+                            <td>Cybersecurity</td>
+                            <td>31%</td>
+                            <td><span class="badge high">Very High</span></td>
+                            <td>Network Security, Linux</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing</td>
+                            <td>14%</td>
+                            <td><span class="badge medium">High</span></td>
+                            <td>Analytics, Social Media</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing</td>
+                            <td>12%</td>
+                            <td><span class="badge medium">Medium</span></td>
+                            <td>Content, SEO</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="decide" class="section-light">
+        <div class="section-inner">
+            <div class="section-heading"><span class="step-label">Step 5 - Decide</span>
+                <h2>Job Market Trends (2024-2026)</h2>
+                <p>Use what you learned to make a confident career decision.</p>
+            </div>
+            <div class="card-grid four">
+                <article class="info-card">
+                    <span class="card-icon" aria-hidden="true">✓</span>
+                    <h3>List Your Top 3 Fields</h3>
+                    <p>Write down the careers that match your interests and strengths.</p>
+                </article>
+                <article class="info-card">
+                    <span class="card-icon" aria-hidden="true">⚖</span>
+                    <h3>Compare Pros and Cons</h3>
+                    <p>Review requirements, growth, and daily responsibilities.</p>
+                </article>
+                <article class="info-card">
+                    <span class="card-icon" aria-hidden="true">→</span>
+                    <h3>Pick One to Explore First</h3>
+                    <p>Choose one career and start building relevant skills.</p>
+                </article>
+                <article class="info-card">
+                    <span class="card-icon" aria-hidden="true">↻</span>
+                    <h3>Re-evaluate Regularly</h3>
+                    <p>Your career plan can change as you learn more.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Start Your Career Journey?</h2>
+        <p>Begin with the Career Guide and take your first step today.</p><button class="light-button" type="button">Get
+            Started Now</button>
+    </section>
+    </main>
+    <footer class="bg-[#0F172A] border-t border-white/10 px-6 py-10 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+            <!-- Footer Main Content -->
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Brand -->
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-start gap-3">
+                        <img src="../public/img/newlogo.png" alt="Internship & Career Guide logo"
+                            class="h-10 w-10 shrink-0 object-contain">
+                        <div>
+                            <h3 class="text-base font-bold leading-6 text-white">
+                                Internship & Career Guide
+                            </h3>
+
+                            <p class="mt-2 max-w-xs text-sm leading-6 text-white/60">
+                                Helping university students navigate the journey
+                                from classroom to career.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="mt-6 flex items-center gap-3">
+                        <a href="http://www.youtube.com/@SimoneGianelli" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-youtube text-sm"></i>
+                        </a>
+                        <a href="https://www.facebook.com/groups/929881051811883/" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/jobs/search-results/?currentJobId=4450880373&keywords=Intern%20jobs&originalSubdomain=kh"
+                            aria-label="LinkedIn" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://t.me/CBjobopportunity" aria-label="Telegram" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-telegram text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Pages -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        Pages
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Home
+                        </a>
+                        <a href="explore.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Explore
+                        </a>
+                        <a href="career-job.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Career Jobs
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Resources
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Internship
+                        </a>
+
+                    </div>
+                </div>
+                <!-- Resources -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        Resources
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            CV Template
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Interview Q&A
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Application Checklist
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Internship
+                        </a>
+                    </div>
+                </div>
+                <!-- About -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        About
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            This Site
+                        </a>
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Your Journey
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Newsletter
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="explore" class="explore section-light"><div class="section-inner"><div class="explore-copy"><span class="step-label">Step 1 - Explore</span><h2>Why Career Exploration Matters?</h2><p>As a university student, choosing a career can feel overwhelming. The good news is that career exploration is a process, so you do not need to have all the answers right away.</p><p>Research shows that students who actively explore careers are more likely to find fulfilling jobs after graduation. This guide will walk you through a proven framework for career exploration, step by step.</p></div><img class="section-image" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=85" alt="Students discussing careers"></div></section>
-
-        <section id="yourself" class="section-light"><div class="section-inner"><div class="section-heading"><span class="step-label">Step 2 - Self-Assessment</span><h2>Know Yourself First</h2><p>Before choosing a career, understand your interests, strengths, skills, personality, and values.</p></div><div class="card-grid four"><article class="info-card"><span class="card-icon">&#9829;</span><h3>Interests</h3><p>What activities, subjects, or topics do you enjoy?</p></article><article class="info-card"><span class="card-icon">&#9733;</span><h3>Strengths</h3><p>Identify the things you can do well.</p></article><article class="info-card"><span class="card-icon">&#128736;</span><h3>Skills</h3><p>Think about technical and soft skills you have.</p></article><article class="info-card"><span class="card-icon">&#10024;</span><h3>Values</h3><p>Understand what is important to you at work.</p></article></div></div></section>
-
-        <section id="research" class="section-light"><div class="section-inner"><div class="section-heading"><span class="step-label">Step 3 - Research</span><h2>How to Research Careers</h2><p>Follow these steps to learn more about your career choices.</p></div><div class="card-grid four"><article class="info-card"><b>01</b><h3>Search Online</h3><p>Explore career websites, job platforms, company websites, and professional resources.</p></article><article class="info-card"><b>02</b><h3>Talk to Professionals</h3><p>Interview people who already work in the career you are interested in.</p></article><article class="info-card"><b>03</b><h3>Compare Requirements</h3><p>Compare education, skills, salary, responsibilities, and career growth.</p></article><article class="info-card"><b>04</b><h3>Make a Career Plan</h3><p>Create an action plan with skills, education, projects, internships, and goals.</p></article></div></div></section>
-
-        <section id="jobs" class="section-light"><div class="section-inner"><div class="section-heading"><span class="step-label">Step 4 - Understand the Market</span><h2>Job Market Trends (2024-2026)</h2><p>Explore examples of growing career areas and the skills employers commonly look for.</p></div><div class="table-wrap"><table><thead><tr><th>Field</th><th>Growth Rate</th><th>Demand Level</th><th>Key Skills</th></tr></thead><tbody><tr><td>Software Development</td><td>25%</td><td><span class="badge high">Very High</span></td><td>JavaScript, Python, Git</td></tr><tr><td>Software Development</td><td>20%</td><td><span class="badge high">Very High</span></td><td>SQL, Python, Tableau</td></tr><tr><td>Cybersecurity</td><td>31%</td><td><span class="badge high">Very High</span></td><td>Network Security, Linux</td></tr><tr><td>Marketing</td><td>14%</td><td><span class="badge medium">High</span></td><td>Analytics, Social Media</td></tr><tr><td>Marketing</td><td>12%</td><td><span class="badge medium">Medium</span></td><td>Content, SEO</td></tr></tbody></table></div></div></section>
-
-        <section id="decide" class="section-light"><div class="section-inner"><div class="section-heading"><span class="step-label">Step 5 - Decide</span><h2>Job Market Trends (2024-2026)</h2><p>Use what you learned to make a confident career decision.</p></div><div class="card-grid four"><article class="info-card"><h3>List Your Top 3 Fields</h3><p>Write down the careers that match your interests and strengths.</p></article><article class="info-card"><h3>Compare Pros and Cons</h3><p>Review requirements, growth, and daily responsibilities.</p></article><article class="info-card"><h3>Pick One to Explore First</h3><p>Choose one career and start building relevant skills.</p></article><article class="info-card"><h3>Re-evaluate Regularly</h3><p>Your career plan can change as you learn more.</p></article></div></div></section>
-
-        <section class="cta"><h2>Ready to Start Your Career Journey?</h2><p>Begin with the Career Guide and take your first step today.</p><button class="light-button" type="button">Get Started Now</button></section>
-    </main>
-    <footer class="bg-[#0F172A] py-10 px-6 lg:px-12 border-t border-white/10">
-        <div class="flex flex-col lg:flex-row justify-between gap-10">
-            <div class="flex gap-4 max-w-xs">
-                <img src="../public/img/img.png" alt="Internship &amp; Career Guide logo" class="h-24 w-18 shrink-0 object-contain">
-                <span class="text-white text-base leading-6">
-                    <span class="font-bold block mb-1">Internship &amp; Career Guide</span>
-                    <span class="text-white/70 text-sm">
-                        Helping university students navigate the journey from classroom to career.
-                    </span>
-                </span>
+            <!-- Bottom -->
+            <div class="mt-10 border-t border-white/10 pt-6 text-center">
+                <p class="text-xs text-white/50">
+                    &copy; 2026 Internship & Career Guide. All rights reserved.
+                </p>
             </div>
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">Page</h3>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Home</a>
-                <a href="explore.html" class="text-white/70 hover:text-white text-sm transition-colors">Explore</a>
-                <a href="career-jobs.html" class="text-white/70 hover:text-white text-sm transition-colors">Career Jobs</a>
-                <a href="resources.html" class="text-white/70 hover:text-white text-sm transition-colors">Resources</a>
-                <a href="internships.html" class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
-            </div>
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">Resources</h3>
-                <a href="cv-template.html" class="text-white/70 hover:text-white text-sm transition-colors">CV Template</a>
-                <a href="interview-qa.html" class="text-white/70 hover:text-white text-sm transition-colors">Interview Q&amp;A</a>
-                <a href="application-checklist.html" class="text-white/70 hover:text-white text-sm transition-colors">Application Checklist</a>
-                <a href="internships.html" class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
-            </div>
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">About</h3>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">This Site</a>
-                <a href="explore.html" class="text-white/70 hover:text-white text-sm transition-colors">Your Journey</a>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Newsletter</a>
-            </div>
-        </div>
-        <div class="mt-10 pt-6 border-t border-white/10 text-center text-white/50 text-xs">
-            &copy; 2026 Internship &amp; Career Guide. All rights reserved.
         </div>
     </footer>
+
+
+
     <script>
-            const menuBtn = document.getElementById("menuBtn");
-            const mobileMenu = document.getElementById("mobileMenu");
-            menuBtn.addEventListener("click", () => {
-                const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
-                mobileMenu.classList.toggle("hidden", isExpanded);
-                menuBtn.setAttribute("aria-expanded", String(!isExpanded));
-                menuBtn.setAttribute("aria-label", isExpanded ? "Open menu" : "Close menu");
-            });
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        menuBtn.addEventListener("click", () => {
+            const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
+            mobileMenu.classList.toggle("hidden", isExpanded);
+            menuBtn.setAttribute("aria-expanded", String(!isExpanded));
+            menuBtn.setAttribute("aria-label", isExpanded ? "Open menu" : "Close menu");
+        });
     </script>
 </body>
+
 </html>
