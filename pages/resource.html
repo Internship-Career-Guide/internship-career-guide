@@ -16,7 +16,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -35,18 +34,36 @@
         lucide.createIcons();
     </script>
 </head>
+<style>
+    @media print {
+        body * {
+            visibility: hidden;
+        }
 
+        #cv-paper,
+        #cv-paper * {
+            visibility: visible;
+        }
+
+        #cv-paper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+</style>
 
 <body class="bg-white text-[#0F172A] font-inter">
     <!------Navbar-------- -->
     <header class="w-full bg-white border-b border-slate-100">
-        <nav class="max-w-[1440px] mx-auto min-h-[72px] lg:h-[100px] px-4 sm:px-6 lg:px-12
+        <nav class="max-w-[1440px] mx-auto min-h-[72px] lg:h-[80px] px-4 sm:px-6 lg:px-12
                     flex items-center justify-between py-2">
-            <a href="../index.html" class="flex items-center gap-2 group min-w-0">
-                <img src="/public/img/logo2.png" alt="logo"
-                    class="h-10 w-10 sm:h-12 sm:w-12 lg:h-16 lg:w-16 object-contain shrink-0">
+            <a href="../index.html" class="flex items-center gap-4 group min-w-0">
+                <img src="/public/img/logo3.png" alt="logo"
+                    class="h-10 w-10 sm:h-12 sm:w-12 lg:h-10 lg:w-10 object-contain shrink-0">
                 <span class="font-poppins font-bold lg:text-lg md:text-xl
-                             text-blue-600 whitespace-nowrap sm:text-base truncate">
+                             text-blue-700 whitespace-nowrap sm:text-base truncate">
                     Internship & Career Guide
                 </span>
             </a>
@@ -64,12 +81,12 @@
 
                 <a href="career.html" class="relative py-3 text-[16px] font-semibold
                            text-slate-800 hover:text-blue-600 transition">
-                    Career Job
+                    Career Jobs
                 </a>
                 <!-- Active Page-->
                 <a href="resource.html" class="relative py-3 text-[16px] font-semibold text-blue-600">
-                    Resource
-                    <span class="absolute left-0 right-0 -bottom-[17px] h-[3px] rounded-full bg-blue-600"></span>
+                    Resources
+                    <span class="absolute left-0 right-0 -bottom-[10px] h-[2px] rounded-full bg-blue-600"></span>
                 </a>
                 <a href="internship.html" class="relative py-3 text-[16px] font-semibold
                            text-slate-800 hover:text-blue-600 transition">Internship
@@ -96,7 +113,7 @@
                     Career Job
                 </a>
                 <a href="resource.html" class="py-2 font-semibold text-blue-600">
-                    Resource
+                    Resources
                 </a>
                 <a href="internship.html" class="py-2 font-semibold text-slate-700">
                     Internship
@@ -130,7 +147,6 @@
                                text-sm md:text-base
                                font-semibold">
                         CAREER RESOURCES
-
                     </div>
                     <h1 class="font-poppins
                                text-4xl sm:text-5xl md:text-6xl
@@ -154,7 +170,7 @@
                     </p>
                     <!-- Buttons -->
                     <div class="mt-8 flex flex-col sm:flex-row items-start gap-4">
-                        <a href="#resources" class="inline-flex items-center justify-center
+                        <a href="resources.html" class="inline-flex items-center justify-center
                             gap-3
                             px-8 py-4
                             rounded-full
@@ -167,7 +183,7 @@
                             Explore Resources
                             <i class="fa-solid fa-arrow-right" class="w-5 h-5 text-white"></i>
                         </a>
-                        <a href="resource.html" class="inline-flex items-center justify-center px-6 py-3
+                        <a href="internship.html" class="inline-flex items-center justify-center px-6 py-3
                              min-h-[56px]
                              rounded-full
                              border-2 border-white/80
@@ -434,139 +450,145 @@
         <section class="py-8 px-6 lg:px-12 bg-slate-50">
             <div class="max-w-[1400px] mx-auto ">
                 <div class="max-w-2xl mx-auto">
-                    <h2 class=" mt-3 font-poppins text-3xl md:text-4xl font-bold
+                    <h2 class=" mt-3 font-poppins text-3xl md:text-4xl font-bold text-center
                      text-[#0F172A]">
                         CV Writing Guide</h2>
-                    <p class="mt-4 text-slate-600 leading-7 ">
+                    <p class="mt-4 text-slate-600 leading-7 text-center ">
                         Your CV is often the first impression
                         an employer has of you.Make it count </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8 mt-12">
                     <!----article1------>
-                    <div class="flex flex-col overflow-hidden
-                            bg-white rounded-2xl
-                            py-4 px-4
-                            border border-slate-200
-                            shadow-sm
-                            hover:shadow-xl
-                            hover:-translate-y-1
-                            transition-all duration-300">
-                        <h3 class="text-xl text-blue-900 font-bold mb-4 text-center">CV Structure Template </h3>
-                        <div class="border-t border-teal-100 p-6 md:p-8 shadow-sm">
-                            <p class="text-slate-600 text-base md:text-base leading-7 mb-7">
-                                Follow this structure when writing your CV.
-                                Keep it to one page if you are a student.</p>
-                            <!----CONTENT1--->
-                            <div class="flex items-center gap-3 mb-5">
-                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">1.Contact
-                                    Information</h3>
+                    <article class="flex flex-col overflow-hidden bg-white rounded-2xl p-4 border border-slate-200
+                         shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl text-blue-900 font-bold mb-2 text-center">CV Structure Template</h3>
+                        <p class="text-slate-600 text-base leading-7 mb-5 text-center">
+                            Follow this structure when writing your CV. Keep it to one page if you are a student.
+                        </p>
+                        <div class="border border-slate-200 shadow-sm overflow-hidden text-sm text-slate-800">
+                            <header class="bg-blue-900 text-white px-6 py-6">
+                                <h4 class="text-2xl md:text-3xl font-bold tracking-wide">Your Full Name</h4>
+                                <p class="text-blue-100 mt-1">Field of study · Internship candidate</p>
+                            </header>
+                            <div class="xl:grid xl:grid-cols-[34%_1fr]">
+                                <aside class="bg-slate-100 px-6 py-6 space-y-6">
+                                    <div>
+                                        <h5
+                                            class="font-bold text-blue-900 tracking-wide border-b border-slate-300 pb-1 mb-3">
+                                            Contact</h5>
+                                        <ul class="space-y-2">
+                                            <li class="flex gap-3"><i
+                                                    class="fa-solid fa-envelope w-4 mt-1 text-blue-900"></i>
+                                                <span class="break-all">Professional email</span>
+                                            </li>
+                                            <li class="flex gap-3"><i
+                                                    class="fa-solid fa-phone w-4 mt-1 text-blue-900"></i>Phone number
+                                            </li>
+                                            <li class="flex gap-3"><i
+                                                    class="fa-brands fa-linkedin w-4 mt-1 text-blue-900"></i>LinkedIn
+                                                profile URL</li>
+                                            <li class="flex gap-3"><i
+                                                    class="fa-solid fa-location-dot w-4 mt-1 text-blue-900"></i>City /
+                                                Region</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5
+                                            class="font-bold text-blue-900 tracking-wide border-b border-slate-300 pb-1 mb-3">
+                                            Skills</h5>
+                                        <ul class="list-disc ml-4 space-y-1">
+                                            <li>Project Management</li>
+                                            <li>Public Relations</li>
+                                            <li>Time Management</li>
+                                            <li>Leadership</li>
+                                            <li>Effective Communication</li>
+                                            <li>Critical Thinking Solving Problem</li>
+                                            <li>Digital Marketing</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5
+                                            class="font-bold text-blue-900 tracking-wide border-b border-slate-300 pb-1 mb-3">
+                                            Languages</h5>
+                                        <ul class="list-disc ml-4 space-y-1">
+                                            <li>Language 1 (Native)</li>
+                                            <li>English (Fluent)</li>
+                                            <li>French(Fluent)</li>
+                                            <li>German(Basic)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5
+                                            class="font-bold text-blue-900 tracking-wide border-b border-slate-300 pb-1 mb-3">
+                                            Reference</h5>
+                                        <ul class="list-disc ml-4 space-y-1">
+                                            <li>Prak Sysoksambath</li>
+                                            <li>Phone:0978347998</li>
+                                            <li>Email:lairengmail.com</li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                                <!-- Main: Summary, Education, Experience -->
+                                <div class="relative px-6 xl:pl-14 py-6 space-y-6">
+                                    <span
+                                        class="hidden xl:block absolute left-[1.9rem] top-8 bottom-8 w-px bg-slate-300"></span>
+                                    <div class="relative">
+                                        <span
+                                            class="hidden xl:flex absolute -left-9 -top-1 w-7 h-7 rounded-full bg-blue-900 text-white items-center justify-center"><i
+                                                class="fa-solid fa-user text-[11px]"></i></span>
+                                        <h5
+                                            class="font-bold text-blue-900 tracking-wide border-b border-slate-300 pb-1 mb-2">
+                                            Professional Summary</h5>
+                                        <p class="leading-6">2–3 sentences on who you are, your key strengths and career
+                                            interest, and what you want from an internship.</p>
+                                    </div>
+
+                                    <div class="relative">
+                                        <span
+                                            class="hidden xl:flex absolute -left-9 -top-1 w-7 h-7 rounded-full bg-blue-900 text-white items-center justify-center"><i
+                                                class="fa-solid fa-graduation-cap text-[11px]"></i></span>
+                                        <h5
+                                            class="font-bold text-blue-900 tracking-wide border-b border-slate-300 pb-1 mb-2">
+                                            Education</h5>
+                                        <div class="flex flex-col justify-between gap-3">
+                                            <p class="font-semibold">Master of Business Management</p>
+                                            <p class="text-slate-500 whitespace-nowrap">School of Business|Royal
+                                                University <br> of Law and Economics</p>
+                                            <p class="text-slate-500 whitespace-nowrap">Expected Year:2024-Future</p>
+                                            <br>
+                                        </div>
+                                        <p>Relevant coursework: 3–5 courses</p>
+                                        <p>GPA: 3.X / 4.0 <span class="text-slate-500">(only if 3.0 or above)</span></p>
+                                    </div>
+                                    <div class="relative">
+                                        <span
+                                            class="hidden xl:flex absolute -left-9 -top-1 w-7 h-7 rounded-full bg-blue-900 text-white items-center justify-center"><i
+                                                class="fa-solid fa-briefcase text-[11px]"></i></span>
+                                        <h5
+                                            class="font-bold text-blue-900 tracking-wide border-b border-slate-300 pb-1 mb-2">
+                                            Work Experience &amp; Projects</h5>
+                                        <div class="flex justify-between gap-3">
+                                            <p class="font-semibold">Job title, Company</p>
+                                            <p class="text-slate-500 whitespace-nowrap">20XX – 20XX</p>
+                                        </div>
+                                        <ul class="list-disc ml-5 mt-1 space-y-1">
+                                            <li>2–3 bullets, each starting with an action verb.</li>
+                                            <li>No work experience yet? Add a university project.</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="space-y-2 ml-1 md:ml-8">
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">Full name</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8 "></i>
-                                    <span class="text-base text-gray-600">Email address(professional)</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">Phone number</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">linkIn profile URL</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">City/Region(Full address or required)</span>
-                                </div>
-                            </div>
-                            <!----CONTENT2--->
-                            <div class="flex items-center gap-3 mb-5">
-                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">2.Professional
-                                    Summary</h3>
-                            </div>
-                            <div class="space-y-2 ml-1 md:ml-8">
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">2-3 sentences describing who you are</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8 "></i>
-                                    <span class="text-base text-gray-600">Your key strengths and career interest</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">What are you looking for in an
-                                        internship</span>
-                                </div>
-                            </div>
-                            <!---CONTENT3---->
-                            <div class="flex items-center gap-3 mb-5">
-                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">3.Education</h3>
-                            </div>
-                            <div class="space-y-2 ml-1 md:ml-8">
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">Degree,university name,expected graduation
-                                        year</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8 "></i>
-                                    <span class="text-base text-gray-600">Relevant course work(3-5 coursee)</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">GPA (only if 3.0 or above)</span>
-                                </div>
-                            </div>
-                            <!---CONTENT4----->
-                            <div class="flex items-center gap-3 mb-5">
-                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">4.Skills</h3>
-                            </div>
-                            <div class="space-y-2 ml-1 md:ml-8">
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">Technical skills (programming
-                                        languages,tools,software)</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8 "></i>
-                                    <span class="text-base text-gray-600">Soft skills
-                                        (communication,teamwork,problem-solving)</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">Languages (if applicable)</span>
-                                </div>
-                            </div>
-                            <!----CONTENT5---->
-                            <div class="flex items-center gap-3 mb-5">
-                                <h3 class="text-lg md:text-base leading-4 font-bold text-blue-600">5.Experience &
-                                    Projects</h3>
-                            </div>
-                            <div class="space-y-2 ml-1 md:ml-8">
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">Job title,company,date</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8 "></i>
-                                    <span class="text-base text-gray-600">2-3 bullet points starting with actions
-                                        verbs</span>
-                                </div>
-                                <div class="text-blue-700 gap-1">
-                                    <i class="fa-solid fa-check w-8 h-8"></i>
-                                    <span class="text-base text-gray-600">Include university project if you lack work
-                                        experience</span>
-                                </div>
+                            <div id="cv-paper"
+                                class="border border-slate-200 shadow-sm overflow-hidden text-sm text-slate-800">
+                                <button onclick="window.print()"
+                                    class="mt-5 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-blue-900 text-white font-semibold hover:bg-blue-800 transition">
+                                    <i class="fa-solid fa-download"></i> Download as PDF
+                                </button>
                             </div>
                         </div>
-                    </div>
+                    </article>
                     <!-----article2---->
-                    <div class="flex flex-col overflow-hidden py-2 px-4">
+                    <article class="flex flex-col overflow-hidden py-2 px-4">
                         <h3 class="text-xl text-blue-900 font-bold mb-6 text-center">
                             CV Do's And Don't
                         </h3>
@@ -730,7 +752,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -741,13 +763,13 @@
                     <h2 class="mt-3 font-poppins text-center text-3xl md:text-4xl font-bold text-[#0F172A]">
                         Interview Preparation
                     </h2>
-                    <p class="mt-4 text-slate-600 leading-7">
+                    <p class="mt-4 text-slate-600 leading-7 text-center">
                         Click each question to see a suggested approach to answering it.
                     </p>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
                         <!--Left Column-->
                         <div>
-                            <h3 class="text-xl text-blue-700 font-semibold md:text-2xl mb-2">
+                            <h3 class="text-xl text-blue-700 font-semibold md:text-2xl mb-2 sm:text-center">
                                 Common Interview Questions
                             </h3>
                             <p class="text-base text-gray-500 mb-6 text-center">
@@ -841,7 +863,7 @@
                         </div>
                         <!-- RIGHT COLUMN -->
                         <div>
-                            <img src="https://images.pexels.com/photos/5439455/pexels-photo-5439455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                            <img src="https://focus-cambodia.com/wp-content/uploads/2020/07/Tatiya-Chaisatephong-tips-768x432.jpg"
                                 alt="interview" class="w-full h-auto rounded-xl object-cover" />
                             <h3 class="mt-6 text-xl md:text-2xl font-semibold text-blue-800">
                                 Quick Interview Tips
@@ -856,35 +878,35 @@
                                 </div>
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class="fa-solid fa-clock h-8 w-8 text-blue-800"></i></span>
+                                        <i class="fa-solid fa-clock h-8 w-8 text-red-400"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         Arrive 10-15 minutes early to settle in and stay calm.
                                     </p>
                                 </div>
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class="fa-solid fa-copy h-8 w-8 text-blue-800"></i></span>
+                                        <i class="fa-solid fa-copy h-8 w-8 text-green-400"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         Bring extra copies of your resume and a notepad.
                                     </p>
                                 </div>
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class="fa-solid fa-eye h-8 w-8 text-blue-800"></i></span>
+                                        <i class="fa-solid fa-eye h-8 w-8 text-slate-400"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         Maintain eye contact and listen actively to every question.
                                     </p>
                                 </div>
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class="fa-solid fa-file h-8 w-8 text-blue-800"></i></span>
+                                        <i class="fa-solid fa-file h-8 w-8 text-teal-400"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         Bring a notepad and pen to jot down key points during the interview.
                                     </p>
                                 </div>
                                 <div class="flex items-start gap-3 border border-slate-200 py-4 rounded-xl">
                                     <span class="text-xl px-4">
-                                        <i class="fa fa-envelope h-8 w-8 text-blue-800" aria-hidden="true"></i></span>
+                                        <i class="fa fa-envelope h-8 w-8 text-red-400" aria-hidden="true"></i></span>
                                     <p class="text-slate-700 leading-6">
                                         Send a thank-you email within 24 hours of the interview.
                                     </p>
@@ -993,13 +1015,13 @@
                             Browse internship opportunities and put your preparation into action.
                         </p>
                         <div class="mt-8 flex justify-center">
-                            <a href="#internship" class="inline-flex items-center justify-center gap-2
+                            <a href="internship.html" class="inline-flex items-center justify-center gap-2
                                  px-8 py-4 rounded-full
                                bg-white hover:bg-slate-100
                                text-teal-700 font-semibold
                                transition duration-200 shadow-lg">
                                 Find Internships
-                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                <i class="fa-solid fa-arrow-right" class="w-5 h-5 text-white"></i>
                             </a>
                         </div>
                     </div>
@@ -1008,89 +1030,121 @@
         </section>
     </main>
     <!--Footer -->
-    <footer class="bg-[#0F172A] py-10 px-6 lg:px-12 border-t border-white/10">
-        <div class="flex flex-col lg:flex-row justify-between gap-10 md:grid grid-cols-4">
-            <!-- Brand -->
-            <div class="flex gap-4 max-w-xs md:items-start *:overflow-hidden">
-                <img src="/public/img/logo2.png" alt="Internship & Career Guide logo" class="h-24 w-18 shrink-0">
-                <span class="text-white text-base leading-6">
-                    <span class="font-bold block mb-1 md:overflow-hidden">Internship & Career Guide</span>
-                    <span class="text-white/70 text-sm md:overflow-hidden">
-                        Helping university students navigate the journey from classroom to career.
-                    </span>
-                </span>
+    <footer class="bg-[#0F172A] border-t border-white/10 px-6 py-10 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+            <!-- Footer Main Content -->
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Brand -->
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-start gap-3">
+                        <img src="/public/img/logo3.png" alt="Internship & Career Guide logo"
+                            class="h-10 w-10 shrink-0 object-contain">
+                        <div>
+                            <h3 class="text-base font-bold leading-6 text-white">
+                                Internship & Career Guide
+                            </h3>
+
+                            <p class="mt-2 max-w-xs text-sm leading-6 text-white/60">
+                                Helping university students navigate the journey
+                                from classroom to career.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="mt-6 flex items-center gap-3">
+                        <a href="https://letsintern.in/" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-youtube text-sm"></i>
+                        </a>
+                        <a href="https://www.facebook.com/groups/929881051811883/" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/jobs/search-results/?currentJobId=4450880373&keywords=Intern%20jobs&originalSubdomain=kh"
+                            aria-label="LinkedIn" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://t.me/CBjobopportunity" aria-label="Telegram" class="flex h-9 w-9 items-center justify-center rounded-full
+                        bg-white/10 text-white transition-all duration-200
+                        hover:bg-white hover:text-[#0F172A]">
+                            <i class="fa-brands fa-telegram text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Pages -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        Pages
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Home
+                        </a>
+                        <a href="explore.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Explore
+                        </a>
+                        <a href="career-job.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Career Jobs
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Resources
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Internship
+                        </a>
+                    </div>
+                </div>
+                <!-- Resources -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        Resources
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            CV Template
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Interview Q&A
+                        </a>
+                        <a href="resource.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Application Checklist
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Internship
+                        </a>
+                    </div>
+                </div>
+                <!-- About -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
+                        About
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            This Site
+                        </a>
+                        <a href="../index.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Your Journey
+                        </a>
+                        <a href="internship.html" class="text-sm text-white/60 transition-colors hover:text-white">
+                            Newsletter
+                        </a>
+                    </div>
+                </div>
             </div>
-            <!-- Page -->
-            <!-- <div class="md:grid grid-cols-3"> -->
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">Page</h3>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Home</a>
-                <a href="explore.html" class="text-white/70 hover:text-white text-sm transition-colors">Explore</a>
-                <a href="career-job.html" class="text-white/70 hover:text-white text-sm transition-colors">Career
-                    Jobs</a>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Resources</a>
-                <a href="internship.html"
-                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
+            <!-- Bottom -->
+            <div class="mt-10 border-t border-white/10 pt-6 text-center">
+                <p class="text-xs text-white/50">
+                    &copy; 2026 Internship & Career Guide. All rights reserved.
+                </p>
             </div>
-            <!-- Resources -->
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">Resources</h3>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">CV
-                    Template</a>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Interview
-                    Q&A</a>
-                <a href="resource.html" class="text-white/70 hover:text-white text-sm transition-colors">Application
-                    Checklist</a>
-                <a href="internship.html"
-                    class="text-white/70 hover:text-white text-sm transition-colors">Internship</a>
-            </div>
-            <!-- About -->
-            <div class="flex flex-col gap-3">
-                <h3 class="text-white text-base font-semibold mb-1">About</h3>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">This
-                    Site</a>
-                <a href="../index.html" class="text-white/70 hover:text-white text-sm transition-colors">Your
-                    Journey</a>
-                <a href="internship.html"
-                    class="text-white/70 hover:text-white text-sm transition-colors">Newsletter</a>
-            </div>
-        </div>
-        </div>
-        <div class="mt-10 pt-6 border-t border-white/10 text-center text-white/50 text-xs">
-            &copy; 2026 Internship & Career Guide. All rights reserved.
         </div>
     </footer>
-    <!-- ========================= JAVASCRIPT========================== -->
-    <script>
-        const menuBtn = document.getElementById("menuBtn");
-        const mobileMenu = document.getElementById("mobileMenu");
-
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-    </script>
-    <script>
-        function toggleFAQ(button) {
-            const wrapper = button.parentElement
-            const answer = wrapper.querySelector('.faq-answer')
-            const icon = button.querySelector('i')
-
-            answer.classList.toggle('hidden')
-
-            if (answer.classList.contains('hidden')) {
-                icon.classList.remove('fa-minus')
-                icon.classList.add('fa-plus')
-            } else {
-                icon.classList.remove('fa-plus')
-                icon.classList.add('fa-minus')
-            }
-        }
-    </script>
-
-
-
-
-
+    <script src="/src/main.js"></script>
 </body>
 
 </html>
