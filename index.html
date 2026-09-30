@@ -97,158 +97,242 @@
       </div>
     </div>
   </header>
-  <section class="relative bg-teal-900 overflow-hidden min-h-[480px] flex items-center">
-    <div class="absolute inset-0 z-0">
-      <img src="./public/img/bg.jpg" alt="Student using laptop" class="w-full h-full object-cover object-right" />
-      <div class="absolute inset-0 bg-gradient-to-r from-teal-950 via-teal-900/90 to-transparent"></div>
-    </div>
-    <div class="w-full relative z-10">
-      <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-start">>
-          <button
-            class="text-base font-semibold leading-7 text-white bg-teal-600 hover:bg-blue-700 mb-4 py-2 px-4 rounded-3xl transition">Your
-            journey starts here</button>
-          <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">From Student to</p>
-          <p class="mt-2 text-3xl font-bold tracking-tightmb-4 text-white sm:text-4xl">Professional</p>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-gray-300 mb-4">Explore careers, build in-demand
-            skills,
-            craft a standout CV, prepare for interviews, and land the right internship — all in one place.
-          </p>
-          <a href="#"
-            class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl ptransition group">
-            <span>Start Exploring</span>
-            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+  <section class="relative isolate flex min-h-[560px] items-center overflow-hidden bg-blue-950 lg:min-h-[640px]"
+    aria-labelledby="hero-title">
+    <img src="./public/img/hero-banner.jpg" alt="A mentor guiding two interns at a laptop"
+      class="absolute inset-0 -z-20 h-full w-full object-cover object-[75%_center] lg:object-center" loading="eager" />
+    <div class="absolute inset-0 -z-10 bg-blue-950/75 lg:hidden" aria-hidden="true"></div>
+    <div
+      class="absolute inset-0 -z-10 hidden lg:block bg-gradient-to-r from-blue-950 from-25% via-blue-950/80 via-45% to-transparent to-75%"
+      aria-hidden="true"></div>
+    <div class="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div class="flex max-w-xl flex-col items-start">
+        <span
+          class="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white ring-1 ring-white/25">
+          <i class="fa-solid fa-graduation-cap text-sky-300" aria-hidden="true"></i>
+          Internship Career Guide
+        </span>
+        <h1 id="hero-title"
+          class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl lg:leading-[1.1]">
+          From student to professional
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-blue-100">
+          Explore careers, build in-demand skills, craft a standout CV, prepare for interviews,
+          and land the right internship, all in one place.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <a href="/pages/career-job.html"
+            class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-blue-900 shadow-lg shadow-blue-950/30 transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <span>Start exploring</span>
+            <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
+              aria-hidden="true"></i>
+          </a>
+          <a href="/pages/resource.html"
+            class="inline-flex items-center justify-center rounded-xl border border-white/40 px-6 py-3 font-medium text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            See how it works
           </a>
         </div>
+
+        <!-- What the guide covers -->
+        <ul class="mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/15 pt-6 text-sm text-blue-100"
+          aria-label="What you will learn">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sky-300"
+              aria-hidden="true"></i>Careers</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sky-300"
+              aria-hidden="true"></i>Skills</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sky-300" aria-hidden="true"></i>CV
+          </li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sky-300"
+              aria-hidden="true"></i>Interviews</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sky-300"
+              aria-hidden="true"></i>Internships</li>
+        </ul>
       </div>
     </div>
   </section>
-  <section class="py-10 bg-slate-50 m">
+
+  <section class="py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold text-blue-950 mb-4">What Is This Website?</h2>
-        <p class="text-slate-500 text-sm leading-relaxed">
-          The Internship & Career Guide is a free resource built for university students who want a clear,
-          step-by-step path from choosing a career to landing an internship.
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-50 text-blue-600
+                   text-xs font-semibold tracking-wider uppercase">
+          About us
+        </span>
+        <h2 class="font-poppins text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          What Is This Website?
+        </h2>
+        <p class="text-slate-500 leading-relaxed">
+          A free resource built for university students who want a clear, step-by-step path
+          from choosing a career to landing an internship.
         </p>
       </div>
-    </div>
 
-    <div class="flex md:flex-cols-3 gap-8  px-4 py-4 sm:px-8 lg:px-8">
-      <div
-        class="bg-white px-24 p-4 rounded-2xl border border-slate-100 text-center transition-transform hover:scale-105">
-        <div class="bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl text-blue-600">
-          <img src="./public/img/2.png" alt="" width="50">
-        </div>
-        <h3 class="text-lg font-bold text-blue-950 mb-3">Who this is For?</h3>
-        <p class="text-slate-500 text-sm leading-relaxed">
-          University students in any year who are starting to think about careers, internships, and life after
-          graduation.
-        </p>
-      </div>
-      <div
-        class="bg-white px-20 p-2 rounded-2xl border border-slate-100 text-center hover:shadow-md transition-transform hover:scale-105">
-        <div class=" bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl text-blue-600">
-          <img src="./public/img/map.png" alt="" width="50" height="50">
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
+        <!-- Card 1 -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-slate-200/70
+                  shadow-sm transition duration-300 hover:-translate-y-2
+                  hover:shadow-xl hover:shadow-blue-100 hover:border-blue-200">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700
+                    flex items-center justify-center text-white text-xl
+                    shadow-lg shadow-blue-200 mb-6
+                    transition duration-300 group-hover:scale-110 group-hover:rotate-3">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <h3 class="font-poppins text-lg font-semibold text-slate-900 mb-3">Who is this for?</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            University students in any year who are starting to think about careers,
+            internships, and life after graduation.
+          </p>
         </div>
-        <h3 class="text-lg font-bold text-blue-950 mb-3">What do we do?</h3>
-        <p class="text-slate-500 text-sm leading-relaxed">
-          Guides you through five stages: explore careers, build skills, prepare your CV, practice interviews, and apply
-          for internships.
-        </p>
-      </div>
-      <div
-        class="bg-white px-24 p-4 rounded-2xl border border-slate-100 text-center hover:shadow-md transition-transform hover:scale-105">
-        <div class=" bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl text-blue-600">
-          <img src="./public/img/1.png" alt="" width="50" height="50">
+
+        <!-- Card 2 -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-slate-200/70
+                  shadow-sm transition duration-300 hover:-translate-y-2
+                  hover:shadow-xl hover:shadow-indigo-100 hover:border-indigo-200">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600
+                    flex items-center justify-center text-white text-xl
+                    shadow-lg shadow-indigo-200 mb-6
+                    transition duration-300 group-hover:scale-110 group-hover:rotate-3">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="font-poppins text-lg font-semibold text-slate-900 mb-3">What do we do?</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Guides you through five stages: explore careers, build skills, prepare your CV,
+            practice interviews, and apply for internships.
+          </p>
         </div>
-        <h3 class="text-lg font-bold text-blue-950 mb-3">Where Do I Start?</h3>
-        <p class="text-slate-500 text-sm leading-relaxed">
-          Begin with the Career Guide to understand your options, then move through each stage at your own pace.
-        </p>
+
+        <!-- Card 3 -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-slate-200/70
+                  shadow-sm transition duration-300 hover:-translate-y-2
+                  hover:shadow-xl hover:shadow-teal-100 hover:border-teal-200">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600
+                    flex items-center justify-center text-white text-xl
+                    shadow-lg shadow-teal-200 mb-6
+                    transition duration-300 group-hover:scale-110 group-hover:rotate-3">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <h3 class="font-poppins text-lg font-semibold text-slate-900 mb-3">Where do I start?</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Begin with the Career Guide to understand your options, then move through
+            each stage at your own pace.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
-
-  <section class="py-10 bg-slate-50/60">
+  <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-
-      <div class="text-center max-w-xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold text-blue-950 mb-3">Your 4 Step Journey</h2>
-        <p class="text-slate-500 text-sm">Follow these stages in order — each one builds on the last.</p>
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-50 text-blue-600
+                   text-xs font-semibold tracking-wider uppercase">
+          How it works
+        </span>
+        <h2 class="font-poppins text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          Your 4 Step Journey
+        </h2>
+        <p class="text-slate-500 leading-relaxed">
+          Follow these stages in order. Each one builds on the last.
+        </p>
       </div>
 
+      <!-- Steps -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-      <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-4  gap-6">
-
-
-        <div
-          class="bg-white p-6 rounded-2xl border border-slate-100 transition-transform hover:scale-105 shadow-sm flex flex-col justify-between">
-          <div class="flex flex-col gap-2">
-            <div class="flex items-center space-x-3 mb-4">
-              <span
-                class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-sm">1</span>
-              <h3 class="font-bold text-blue-950">Explore Career</h3>
-            </div>
-            <p class="text-slate-500 text-xs leading-relaxed">
-              Discover which fields match your interests, strengths, and goals.
-            </p>
-
-            <span class="text-blue-700 font-bold"><a href="index.html">learn how</a><i
-                class="fa-solid fa-arrow-right h-8 w-8"></i></span>
-
+        <!-- Step 1 -->
+        <div class="group relative flex flex-col bg-slate-50 rounded-3xl p-7 border border-slate-200/70
+                  overflow-hidden transition duration-300 hover:-translate-y-2 hover:bg-white
+                  hover:shadow-xl hover:shadow-blue-100 hover:border-blue-200">
+          <span class="absolute -top-3 right-4 font-poppins font-extrabold text-7xl text-slate-200/70
+                     select-none transition group-hover:text-blue-100">01</span>
+          <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700
+                    flex items-center justify-center text-white shadow-lg shadow-blue-200 mb-6">
+            <i class="fa-solid fa-compass"></i>
           </div>
+          <h3 class="font-poppins text-lg font-semibold text-slate-900 mb-2">Explore Careers</h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-6">
+            Discover which fields match your interests, strengths, and goals.
+          </p>
+          <a href="pages/explore.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-blue-600
+                  hover:text-blue-800">
+            Learn how
+            <i class="fa-solid fa-arrow-right text-xs transition group-hover:translate-x-1"></i>
+          </a>
         </div>
-        <div
-          class="bg-white p-6 rounded-2xl border border-slate-100 transition-transform hover:scale-105 shadow-sm flex flex-col justify-between">
-          <div class="flex flex-col gap-2">
-            <div class="flex items-center space-x-3 mb-4">
-              <span
-                class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-sm">2</span>
-              <h3 class="font-bold text-blue-950">Build Skills</h3>
-            </div>
-            <p class="text-slate-500 text-xs leading-relaxed">
-              Identify the technical and soft skills you need for your chosen path.
-            </p>
-            <span class="text-blue-700 font-bold"><a href="pages/explore.html">See career paths </a><i
-                class="fa-solid fa-arrow-right h-8 w-8"></i></span>
+
+        <!-- Step 2 -->
+        <div class="group relative flex flex-col bg-slate-50 rounded-3xl p-7 border border-slate-200/70
+                  overflow-hidden transition duration-300 hover:-translate-y-2 hover:bg-white
+                  hover:shadow-xl hover:shadow-indigo-100 hover:border-indigo-200">
+          <span class="absolute -top-3 right-4 font-poppins font-extrabold text-7xl text-slate-200/70
+                     select-none transition group-hover:text-indigo-100">02</span>
+          <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600
+                    flex items-center justify-center text-white shadow-lg shadow-indigo-200 mb-6">
+            <i class="fa-solid fa-laptop-code"></i>
           </div>
+          <h3 class="font-poppins text-lg font-semibold text-slate-900 mb-2">Build Skills</h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-6">
+            Identify the technical and soft skills you need for your chosen path.
+          </p>
+          <a href="pages/career-job.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-indigo-600
+                  hover:text-indigo-800">
+            See career paths
+            <i class="fa-solid fa-arrow-right text-xs transition group-hover:translate-x-1"></i>
+          </a>
         </div>
-        <div
-          class="bg-white p-6 rounded-2xl border border-slate-100 transition-transform hover:scale-105 shadow-sm flex flex-col justify-between">
-          <div class="flex flex-col gap-2">
-            <div class="flex items-center space-x-3 mb-4">
-              <span
-                class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-sm">3</span>
-              <h3 class="font-bold text-blue-950">Prepare Your CV</h3>
-            </div>
-            <p class="text-slate-500 text-xs leading-relaxed">
-              Create a professional CV that highlights your strengths and experience.
-            </p>
-            <span​ class="text-blue-700 font-bold"><a href="pages/resource.html">CV tips </a><i
-                class="fa-solid fa-arrow-right h-8 w-8"></i></span>
+
+        <!-- Step 3 -->
+        <div class="group relative flex flex-col bg-slate-50 rounded-3xl p-7 border border-slate-200/70
+                  overflow-hidden transition duration-300 hover:-translate-y-2 hover:bg-white
+                  hover:shadow-xl hover:shadow-teal-100 hover:border-teal-200">
+          <span class="absolute -top-3 right-4 font-poppins font-extrabold text-7xl text-slate-200/70
+                     select-none transition group-hover:text-teal-100">03</span>
+          <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600
+                    flex items-center justify-center text-white shadow-lg shadow-teal-200 mb-6">
+            <i class="fa-solid fa-file-lines"></i>
           </div>
+          <h3 class="font-poppins text-lg font-semibold text-slate-900 mb-2">Prepare Your CV</h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-6">
+            Create a professional CV that highlights your strengths and experience.
+          </p>
+          <a href="pages/resource.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-teal-600
+                  hover:text-teal-800">
+            CV tips
+            <i class="fa-solid fa-arrow-right text-xs transition group-hover:translate-x-1"></i>
+          </a>
         </div>
-        <div
-          class="bg-white p-6 transition-transform hover:scale-105 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
-          <div class="flex flex-col gap-2">
-            <div class="flex items-center space-x-3 mb-4">
-              <span
-                class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-sm">4</span>
-              <h3 class="font-bold text-blue-950">Prepare for Interviews</h3>
-            </div>
-            <p class="text-slate-500 text-xs leading-relaxed">
-              Practice common interview questions and learn how to present yourself.
-            </p>
-            <span class="text-blue-700 font-bold"><a href="pages/internship.html">Interviews </a><i
-                class="fa-solid fa-arrow-right h-8 w-8"></i></span>
+
+        <!-- Step 4 -->
+        <div class="group relative flex flex-col bg-slate-50 rounded-3xl p-7 border border-slate-200/70
+                  overflow-hidden transition duration-300 hover:-translate-y-2 hover:bg-white
+                  hover:shadow-xl hover:shadow-orange-100 hover:border-orange-200">
+          <span class="absolute -top-3 right-4 font-poppins font-extrabold text-7xl text-slate-200/70
+                     select-none transition group-hover:text-orange-100">04</span>
+          <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-400 to-rose-500
+                    flex items-center justify-center text-white shadow-lg shadow-orange-200 mb-6">
+            <i class="fa-solid fa-comments"></i>
           </div>
+          <h3 class="font-poppins text-lg font-semibold text-slate-900 mb-2">Ace Interviews</h3>
+          <p class="text-slate-500 text-sm leading-relaxed mb-6">
+            Practice common interview questions and learn how to present yourself.
+          </p>
+          <a href="pages/internship.html" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-orange-600
+                  hover:text-orange-800">
+            Interview tips
+            <i class="fa-solid fa-arrow-right text-xs transition group-hover:translate-x-1"></i>
+          </a>
         </div>
+
       </div>
     </div>
   </section>
+
   <!-- FEATURES -->
   <section class="py-16 bg-slate-50/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -292,7 +376,7 @@
         <!-- Card 3 -->
         <article
           class="group flex flex-col items-center text-center bg-white p-6 rounded-2xl border border-slate-100 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-          <img src="/img/Pen.png" alt="" aria-hidden="true" width="60" height="60" class="mb-5">
+          <img src="public/img/Pen.png" alt="" aria-hidden="true" width="60" height="60" class="mb-5">
           <h3 class="font-bold text-blue-950 mb-2">CV &amp; Interview</h3>
           <p class="text-slate-500 text-xs leading-relaxed mb-6">
             Use our CV template, checklist, and interview Q&amp;A to prepare professional application materials.
@@ -337,9 +421,6 @@
       </div>
     </div>
   </section>
-
-
-
 
   <section class="bg-slate-100 py-12 px-6">
     <div class="max-w-3xl mx-auto">

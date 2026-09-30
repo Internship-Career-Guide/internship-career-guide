@@ -109,72 +109,59 @@
             </div>
         </div>
     </header>
+    <!-- Explore page hero: Tailwind CSS + Font Awesome -->
+    <section class="relative isolate flex min-h-[520px] items-center overflow-hidden bg-blue-950 md:min-h-[560px]"
+        aria-labelledby="explore-title">
 
+        <!-- Photo: keep her head in frame (crop from the top, not the center) -->
+        <img src="../public/img/bg.jpg" alt="A student working on a laptop"
+            class="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_15%] lg:object-[center_15%]"
+            loading="eager" fetchpriority="high" />
 
+        <!-- Blue tint so the photo's teal wall blends with the blue theme -->
+        <div class="absolute inset-0 -z-10 bg-blue-800/40 mix-blend-multiply" aria-hidden="true"></div>
 
-    <section class="relative min-h-[680px] md:min-h-[720px] flex items-center overflow-hidden">
-        <img src="../public/img/bg.jpg" alt="Students working together"
-            class="absolute inset-0 w-full h-full object-cover object-center">
-        <div class="absolute inset-0
-                 bg-gradient-to-r
-                 from-[#0F3D3E]/95
-                 via-[#0F3D3E]/75
-                 to-[#0F3D3E]/20">
-        </div>
-        <div class="relative z-10 max-w-[1440px] w-full mx-auto px-6 sm:px-10 lg:px-12 py-16">
-            <div class="max-w-[760px]">
-                <div class="inline-flex items-center
-                        px-4 py-1.5
-                        mb-6
-                        rounded-full
-                        border border-white/30
-                        bg-white/10
-                        backdrop-blur-sm
-                        text-white
-                        text-xs md:text-sm
-                        font-medium
-                        tracking-wide">
-                    Explore your career job
-                </div>
-                <h1 class="font-poppins
-                        text-4xl sm:text-5xl md:text-6xl
-                        lg:text-[58px]
-                        leading-[1.1]
-                        font-bold
-                        tracking-tight
-                       text-white">
-                    Find Your Internship
-                    <br class="hidden sm:block">
-                    Opportunities
+        <!-- Mobile: even overlay so text is readable over the photo -->
+        <div class="absolute inset-0 -z-10 bg-blue-950/80 lg:hidden" aria-hidden="true"></div>
+        <!-- Desktop: solid behind text, clear over her -->
+        <div class="absolute inset-0 -z-10 hidden bg-gradient-to-r from-blue-950 from-25% via-blue-950/80 via-45% to-transparent to-75% lg:block"
+            aria-hidden="true"></div>
+
+        <div class="mx-auto w-full max-w-[1440px] px-6 py-14 sm:px-10 lg:px-12 lg:py-20">
+            <div class="max-w-[640px]">
+
+                <span
+                    class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-white md:text-sm">
+                    <i class="fa-solid fa-compass text-sky-300" aria-hidden="true"></i>
+                    Career exploration
+                </span>
+
+                <h1 id="explore-title"
+                    class="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[56px]">
+                    Find your internship opportunities
                 </h1>
-                <p class="mt-6
-                       max-w-[650px]
-                       text-base md:text-lg
-                       leading-8
-                       text-white/90">
+
+                <p class="mt-6 max-w-xl text-base leading-8 text-blue-100 md:text-lg">
                     Learn how to explore career options, understand the job market, and make
                     confident decisions about your future.
                 </p>
+
+                <!-- Next step: gives the page a clear action (change the links to your real sections) -->
+                <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                    <a href="#opportunities"
+                        class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-blue-900 shadow-lg shadow-blue-950/30 transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                        <span>Browse opportunities</span>
+                        <i class="fa-solid fa-arrow-down text-xs transition-transform group-hover:translate-y-0.5"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="#job-market"
+                        class="inline-flex items-center justify-center rounded-xl border border-white/40 px-6 py-3 font-medium text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                        Understand the job market
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-
-
-    <section id="explore" class="explore section-light">
-        <div class="section-inner">
-            <div class="explore-copy"><span class="step-label">Step 1 - Explore</span>
-                <h2>Why Career Exploration Matters?</h2>
-                <p>As a university student, choosing a career can feel overwhelming. The good news is that career
-                    exploration is a process, so you do not need to have all the answers right away.</p>
-                <p>Research shows that students who actively explore careers are more likely to find fulfilling jobs
-                    after graduation. This guide will walk you through a proven framework for career exploration, step
-                    by step.</p>
-            </div><img class="section-image"
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=85"
-                alt="Students discussing careers">
-        </div>
-    </section>
-
     <section id="yourself" class="section-light">
         <div class="section-inner">
             <div class="section-heading"><span class="step-label">Step 2 - Self-Assessment</span>
