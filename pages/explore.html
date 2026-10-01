@@ -109,52 +109,39 @@
             </div>
         </div>
     </header>
-    <!-- Explore page hero: Tailwind CSS + Font Awesome -->
     <section class="relative isolate flex min-h-[520px] items-center overflow-hidden bg-blue-950 md:min-h-[560px]"
         aria-labelledby="explore-title">
-
-        <!-- Photo: keep her head in frame (crop from the top, not the center) -->
         <img src="../public/img/bg.jpg" alt="A student working on a laptop"
             class="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_15%] lg:object-[center_15%]"
             loading="eager" fetchpriority="high" />
-
-        <!-- Blue tint so the photo's teal wall blends with the blue theme -->
         <div class="absolute inset-0 -z-10 bg-blue-800/40 mix-blend-multiply" aria-hidden="true"></div>
 
-        <!-- Mobile: even overlay so text is readable over the photo -->
         <div class="absolute inset-0 -z-10 bg-blue-950/80 lg:hidden" aria-hidden="true"></div>
-        <!-- Desktop: solid behind text, clear over her -->
         <div class="absolute inset-0 -z-10 hidden bg-gradient-to-r from-blue-950 from-25% via-blue-950/80 via-45% to-transparent to-75% lg:block"
             aria-hidden="true"></div>
-
         <div class="mx-auto w-full max-w-[1440px] px-6 py-14 sm:px-10 lg:px-12 lg:py-20">
             <div class="max-w-[640px]">
-
                 <span
                     class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium text-white md:text-sm">
                     <i class="fa-solid fa-compass text-sky-300" aria-hidden="true"></i>
                     Career exploration
                 </span>
-
                 <h1 id="explore-title"
                     class="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[56px]">
                     Find your internship opportunities
                 </h1>
-
                 <p class="mt-6 max-w-xl text-base leading-8 text-blue-100 md:text-lg">
                     Learn how to explore career options, understand the job market, and make
                     confident decisions about your future.
                 </p>
-
-                <!-- Next step: gives the page a clear action (change the links to your real sections) -->
                 <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                    <a href="#opportunities"
+                    <a href="/pages/internship.html"
                         class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-blue-900 shadow-lg shadow-blue-950/30 transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                         <span>Browse opportunities</span>
                         <i class="fa-solid fa-arrow-down text-xs transition-transform group-hover:translate-y-0.5"
                             aria-hidden="true"></i>
                     </a>
-                    <a href="#job-market"
+                    <a href="/pages/career-job.html"
                         class="inline-flex items-center justify-center rounded-xl border border-white/40 px-6 py-3 font-medium text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                         Understand the job market
                     </a>
