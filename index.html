@@ -2,12 +2,19 @@
 <html lang="en">
 
 <head>
-  <title>Internship & Career Guide</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Internship & Career Guide helps students in Cambodia discover internship opportunities, career jobs, public and private sector opportunities, and useful career resources.">
-  <meta name="robots" content="index, follow">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Internship Career Guide | Find Internships & Start Your Career</title>
+    <meta name="description"
+      content="A free, easy guide to finding internships, writing your CV, preparing for interviews, and starting your career." />
+    <meta property="og:title" content="Internship Career Guide" />
+    <meta property="og:description" content="A free, easy guide to finding internships and starting your career." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.internshipcareerguide.site" />
+  </head>
   <link rel="canonical" href="https://internship-career-guide.vercel.app/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -589,6 +596,52 @@
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
+  </script>
+  <script>
+    // Put your Formspree link here
+    var url = "https://formspree.io/f/YOUR_FORM_ID";
+
+    var button = document.getElementById("subscribeBtn");
+
+    button.onclick = function () {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var error = document.getElementById("errorMessage");
+      var success = document.getElementById("successMessage");
+
+      // check empty
+      if (name == "" || email == "") {
+        error.innerText = "Please fill in your name and email.";
+        error.classList.remove("hidden");
+        success.classList.add("hidden");
+        return;
+      }
+
+      // check email has @
+      if (email.indexOf("@") == -1) {
+        error.innerText = "Please enter a valid email.";
+        error.classList.remove("hidden");
+        success.classList.add("hidden");
+        return;
+      }
+
+      // send to Formspree
+      fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: name, email: email })
+      }).then(function (response) {
+        if (response.ok) {
+          error.classList.add("hidden");
+          success.classList.remove("hidden");
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+        } else {
+          error.innerText = "Something went wrong. Try again.";
+          error.classList.remove("hidden");
+        }
+      });
+    };
   </script>
 </body>
 
