@@ -1191,12 +1191,13 @@
             const cv = document.getElementById("cv");
             const area = document.getElementById("print-area");
             const copy = cv.cloneNode(true);
-            copy.id = "cv-copy";          // avoid two elements with the same id
+            copy.id = "cv-copy";
             area.innerHTML = "";
             area.appendChild(copy);
             window.print();
         }
     </script>
+
 </body>
 
 </html>
