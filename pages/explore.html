@@ -255,11 +255,12 @@
             </div>
         </div>
     </section>
+
     <section id="decide" class="section-light">
         <div class="section-inner">
             <div class="section-heading"><span class="step-label">Step 5 - Decide</span>
                 <h2>Making Your Decision</h2>
-                <p>A simple framework to narrow down your options.</p>
+                <p>Use what you learned to make a confident career decision.</p>
             </div>
             <div class="card-grid four">
                 <article class="info-card">
@@ -283,16 +284,188 @@
                     <p>Your career plan can change as you learn more.</p>
                 </article>
             </div>
-            <div class="text-center mt-10">
-                <p class="text-slate-500 mb-4">Not sure which field is right for you?</p>
-                <a href="quiz.html"
-                    class="inline-block bg-blue-600 text-white font-bold rounded-xl px-8 py-4 hover:bg-blue-700">
-                    🎯 Take the Internship Match Quiz
-                </a>
-            </div>
         </div>
     </section>
+    <section id="quiz" class="bg-slate-100 py-16 px-6">
+        <div class="max-w-4xl mx-auto">
 
+            <!-- Title -->
+            <div class="text-center">
+                <span class="inline-block bg-blue-100 text-blue-700 font-bold text-sm rounded-full px-4 py-1">🎯
+                    Internship Match Quiz</span>
+                <h2 class="text-4xl font-bold text-blue-900 mt-4">Find Your Best Internship</h2>
+                <p class="text-slate-500 mt-3">Answer 5 easy questions. We show the field that fits you.</p>
+            </div>
+
+            <!-- Progress -->
+            <div class="mt-8">
+                <div class="flex justify-between text-sm font-bold text-blue-900 mb-2">
+                    <span>Your progress</span>
+                    <span id="progressText">0 of 5 answered</span>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-3">
+                    <div id="progressBar" class="bg-blue-600 h-3 rounded-full" style="width:0%"></div>
+                </div>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 mt-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="w-9 h-9 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center">1</span>
+                    <h3 class="text-xl font-bold text-blue-900">What do you enjoy most?</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="1" data-cat="tech"><span class="text-2xl">💻</span><span>Building websites and
+                            apps</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="1" data-cat="design"><span class="text-2xl">🎨</span><span>Drawing and
+                            designing</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="1" data-cat="business"><span class="text-2xl">📋</span><span>Planning and
+                            organizing</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="1" data-cat="marketing"><span class="text-2xl">💬</span><span>Writing and talking to
+                            people</span></button>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 mt-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="w-9 h-9 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center">2</span>
+                    <h3 class="text-xl font-bold text-blue-900">Which skill is your strongest?</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="2" data-cat="tech"><span class="text-2xl">🧠</span><span>Computer and
+                            logic</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="2" data-cat="design"><span class="text-2xl">✨</span><span>Creativity</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="2" data-cat="business"><span class="text-2xl">🤝</span><span>Teamwork and
+                            leading</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="2" data-cat="marketing"><span
+                            class="text-2xl">🗣️</span><span>Communication</span></button>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 mt-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="w-9 h-9 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center">3</span>
+                    <h3 class="text-xl font-bold text-blue-900">How do you like to work?</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="3" data-cat="tech"><span class="text-2xl">🧩</span><span>Alone, solving
+                            problems</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="3" data-cat="design"><span class="text-2xl">🖌️</span><span>On creative
+                            projects</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="3" data-cat="business"><span class="text-2xl">👥</span><span>With a team and a
+                            plan</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="3" data-cat="marketing"><span class="text-2xl">🌍</span><span>With many different
+                            people</span></button>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 mt-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="w-9 h-9 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center">4</span>
+                    <h3 class="text-xl font-bold text-blue-900">Which subject do you like most?</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="4" data-cat="tech"><span class="text-2xl">🔢</span><span>Computer science or
+                            math</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="4" data-cat="design"><span class="text-2xl">🖼️</span><span>Art or
+                            design</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="4" data-cat="business"><span class="text-2xl">📈</span><span>Business or
+                            management</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="4" data-cat="marketing"><span class="text-2xl">📰</span><span>Languages or
+                            media</span></button>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 mt-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="w-9 h-9 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center">5</span>
+                    <h3 class="text-xl font-bold text-blue-900">Which task sounds fun?</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="5" data-cat="tech"><span class="text-2xl">🛠️</span><span>Fix a computer
+                            problem</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="5" data-cat="design"><span class="text-2xl">🏷️</span><span>Make a poster or
+                            logo</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="5" data-cat="business"><span class="text-2xl">🎉</span><span>Plan a school
+                            event</span></button>
+                    <button
+                        class="quiz-option flex items-center gap-3 border-2 border-slate-200 rounded-xl px-4 py-4 text-left bg-white text-blue-900 hover:border-blue-500 hover:bg-blue-50"
+                        data-q="5" data-cat="marketing"><span class="text-2xl">📱</span><span>Post on social
+                            media</span></button>
+                </div>
+            </div>
+            <p id="quizError" class="text-red-500 text-center mt-6 hidden">Please answer all 5 questions.</p>
+
+            <button id="quizBtn" class="w-full bg-blue-600 text-white font-bold rounded-xl py-4 mt-6 hover:bg-blue-700">
+                Show My Match
+            </button>
+
+            <!-- Result -->
+            <div id="quizResult" class="hidden bg-blue-900 text-white rounded-2xl p-8 mt-8 text-center">
+                <p class="text-blue-200">Your best match is</p>
+                <p id="resultIcon" class="text-6xl mt-3"></p>
+                <h3 id="resultTitle" class="text-3xl font-bold mt-2"></h3>
+                <p id="resultText" class="text-blue-100 mt-3 max-w-xl mx-auto"></p>
+                <div class="text-left max-w-md mx-auto mt-6" id="resultBars"></div>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center mt-8">
+                    <a href="/pages/internship.html"
+                        class="bg-white text-blue-900 font-bold rounded-xl px-6 py-3 hover:bg-blue-50">See
+                        Internships</a>
+                    <button id="quizReset"
+                        class="border-2 border-blue-300 text-white font-bold rounded-xl px-6 py-3 hover:bg-blue-800">Try
+                        Again</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <section class="cta">
         <h2>Ready to Start Your Career Journey?</h2>
         <p>Begin with the Career Guide and take your first step today.</p><button class="light-button" type="button">Get
@@ -414,9 +587,7 @@
             </div>
         </div>
     </footer>
-
-
-
+    <script type="module" src="/src/quiz.js"></script>
     <script>
         const menuButton = document.querySelector('#menuBtn');
         const mobileMenu = document.querySelector('#mobileMenu');
