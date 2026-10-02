@@ -598,9 +598,6 @@
     });
   </script>
   <script>
-    // Put your Formspree link here
-    var url = "https://formspree.io/f/YOUR_FORM_ID";
-
     var button = document.getElementById("subscribeBtn");
 
     button.onclick = function () {
@@ -625,22 +622,11 @@
         return;
       }
 
-      // send to Formspree
-      fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: name, email: email })
-      }).then(function (response) {
-        if (response.ok) {
-          error.classList.add("hidden");
-          success.classList.remove("hidden");
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-        } else {
-          error.innerText = "Something went wrong. Try again.";
-          error.classList.remove("hidden");
-        }
-      });
+      // success
+      error.classList.add("hidden");
+      success.classList.remove("hidden");
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
     };
   </script>
 </body>
